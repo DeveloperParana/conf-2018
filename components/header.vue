@@ -2,7 +2,6 @@
   <header class="bg-header">
     <div class="header">
       <menuFixed/>
-
       <div class="header--block size margin container column justify-content-center">
 
         <div class="header--block--date container">
@@ -46,52 +45,51 @@
         </div>
 
       </div>
-
     </div>
   </header>
 </template>
 
 <script>
-  import menuFixed from '@/components/menu'
+import menuFixed from "@/components/menu";
 
-  export default {
-    components: {
-      menuFixed
-    }
+export default {
+  components: {
+    menuFixed
   }
+};
 </script>
 
 <style lang="scss" scoped>
-  .bg-header {
-    background: url(~/assets/images/header.svg);
-    background-position: center bottom;
-    background-size: 90%;
-    background-repeat: no-repeat;
-    @media (max-width: 720px) {
-      background: none;
-    }
+.bg-header {
+  background: url(~/assets/images/header.svg);
+  background-position: center bottom;
+  background-size: 90%;
+  background-repeat: no-repeat;
+  @media (max-width: 720px) {
+    background: none;
   }
+}
 
-  .header {
-    min-height: 100vh;
-    .header--block {
-      min-height: 80vh;
-      // border: 1px solid #ddd;
-      .header--block--intro {
-        h1 {
-          font-size: 4rem;
-        }
-        p {
-          font-size: 20px;
-          opacity: .5;
-        }
+.header {
+  min-height: 100vh;
+  .header--block {
+    min-height: 80vh;
+    // border: 1px solid #ddd;
+    .header--block--intro {
+      h1 {
+        font-size: 4rem;
       }
-      > div {
-        margin-bottom: 50px;
-        &:last-child {
-          margin-bottom: 0;
-        }
+      p {
+        font-size: 20px;
+        opacity: 0.5;
+      }
+    }
+    > div {
+      margin-bottom: 50px;
+      &:last-child {
+        margin-bottom: 0;
       }
     }
   }
+}
 </style>
