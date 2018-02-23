@@ -3,7 +3,7 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'cont-2018',
+    title: 'DevParaná Conference 2018',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -13,10 +13,15 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
+  css: [
+    { src: '@/assets/sass/main.scss', lang: 'scss' },
+    { src: 'node_modules/@gustavoquinalha/buttons-css/assets/css/buttons-no-icons.min.css', lang: 'css' },
+    { src: 'node_modules/the-grid-flexbox/css/the-grid.min.css', lang: 'css' }
+  ],
   /*
   ** Customize the progress bar color
   */
-  loading: { color: '#3B8070' },
+  loading: { color: '#15a04b' },
   /*
   ** Build configuration
   */
@@ -32,7 +37,12 @@ module.exports = {
           loader: 'eslint-loader',
           exclude: /(node_modules)/
         })
-      }
+      };
+      config.module.rules.forEach((rule) => {
+        if (rule.test.toString() === '/\\.vue$/') {
+          rule.options.loaders.scss[2].options.data = '@import "./assets/sass/main.scss";'
+        }
+      })
     }
   }
 }

@@ -1,0 +1,7 @@
+html {
+  background: $color-dark;
+  background: url(~/assets/images/lines.svg), $color-dark;
+  background-position: center center;
+  background-attachment: fixed;
+  color: $color-white;
+}
