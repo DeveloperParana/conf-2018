@@ -1,5 +1,5 @@
 <template>
-  <div class="about--block size margin container justify-content-center">
+  <div class="about--block size margin container justify-content-center" id="about">
 
     <div class="about--block--title col-6">
       <h2>

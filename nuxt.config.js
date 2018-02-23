@@ -1,4 +1,6 @@
 module.exports = {
+  router: {
+  },
   /*
   ** Headers of the page
   */
@@ -18,6 +20,11 @@ module.exports = {
     { src: '@/assets/sass/main.scss', lang: 'scss' },
     { src: 'node_modules/@gustavoquinalha/buttons-css/assets/css/buttons-no-icons.min.css', lang: 'css' },
     { src: 'node_modules/the-grid-flexbox/css/the-grid.min.css', lang: 'css' }
+  ],
+  plugins: [
+    {src: '~plugins/smooth-scroll.js', ssr: false},
+    {src: '~plugins/menuspy.js', ssr: false},
+    {src: '~plugins/ga.js', ssr: false}
   ],
   /*
   ** Customize the progress bar color

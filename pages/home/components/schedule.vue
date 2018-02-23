@@ -1,5 +1,5 @@
 <template>
-  <div class="size margin">
+  <div class="size margin" id="schedule">
     <div class="schedule container column">
       <div class="schedule--item container align-items-start" v-for="schedule in schedules" :key="schedule.id" :class="{ active : sheduleSelected === schedule.id}" @click="sheduleSelected = schedule.id">
         <div class="schedule--item--time flex-basis-100 margin-right-10">
