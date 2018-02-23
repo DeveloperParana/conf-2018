@@ -1,9 +1,30 @@
 export const state = () => ({
   speakers: [
-    { id: 1, name: 'Marcos', description: 'Lorem ipsum dolor sit amet.' },
-    { id: 2, name: 'Joao', description: 'Ipsum dolor sit amet.' },
-    { id: 3, name: 'Jorge', description: 'Dolor sit amet.' }
-  ],
+    {
+      id: 1,
+      name: 'Mike Grabowski',
+      image: 'mike',
+      role: 'Callstack.io, Poland',
+      description: 'Head of Open Source, React Native Core Contributor.'
+    }, {
+      id: 2,
+      name: 'Tyler Clark',
+      image: 'tyler',
+      role: 'Pluralsight, US',
+      description: 'Tyler is a Full-Stack software engineer at Pluralsight. He loves reading, writing, and teaching about emerging technologies.'
+    }, {
+      id: 3,
+      name: 'Sara Vieira',
+      image: 'sara',
+      role: 'YLDio, Portugal',
+      description: 'Front-End Developer at @YLDio, open sorcerer, maker of useless modules, Blogger, Drummer and horror movie fan girl.'
+    }, {
+      id: 4,
+      name: 'Kristin Baumann',
+      image: 'kristin',
+      role: 'HomeToGo, Germany',
+      description: 'Kristin Baumann is a Senior Frontend Developer with great interest in UI / UX design and React programming. With a degree in Computational Visualistics and after developing abroad in Australia and Vietnam she is currently working as a Product Design & Prototyping Manager at HomeToGo in Berlin. in UI / UX design and React programming. With a degree in Computational Visualistics and after developing abroad in Australia and Vietnam she is currently working as a Product Design & Prototyping Manager at HomeToGo in Berlin.'
+    }],
   schedules: [{
     id: 1,
     time: '8:30',

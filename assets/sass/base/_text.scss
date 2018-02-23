@@ -48,3 +48,16 @@ p {
     margin-right: 20px;
   }
 }
+
+.box-title {
+  text-transform: uppercase;
+  margin-bottom: 100px;
+    h2 span {
+      display: block
+    }
+    @media (max-width: 720px) {
+      h2 {
+        font-size: 10vw;
+      }
+    }
+}

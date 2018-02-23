@@ -3,6 +3,19 @@
   max-width: 90%;
 }
 
+.size-padding {
+  width: calc(1200px + 40px);
+  max-width: 90%;
+}
+
 .margin {
   margin: 0 auto;
+}
+
+.relative {
+  position: relative;
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }

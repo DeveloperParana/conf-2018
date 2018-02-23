@@ -1,5 +1,12 @@
 <template>
-  <div class="size margin" id="schedule">
+  <div class="size margin content" id="schedule">
+    <div class="container justify-content-center">
+      <div class="flex-basis-700 box-title text-align-left">
+        <h2>
+          Programação
+        </h2>
+      </div>
+    </div>
     <div class="schedule container column">
       <div class="schedule--item container align-items-start" v-for="schedule in schedules" :key="schedule.id" :class="{ active : sheduleSelected === schedule.id}" @click="sheduleSelected = schedule.id">
         <div class="schedule--item--time flex-basis-100 margin-right-10">
@@ -42,7 +49,6 @@
 
 <style lang="scss" scoped>
   .schedule {
-    padding: 100px 0;
     font-size: 20px;
     .schedule--item {
       padding-bottom: 100px;
