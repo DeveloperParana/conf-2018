@@ -16,7 +16,10 @@
         </div>
 
         <div class="header--block--intro">
-          <h1>DevParaná Conference 2018</h1>
+          <h1>
+            <span>DevParaná</span>
+            <span>Conference 2018</span>
+          </h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
         </div>
 
@@ -50,46 +53,46 @@
 </template>
 
 <script>
-import menuFixed from "@/components/menu";
+  import menuFixed from "@/components/menu";
 
-export default {
-  components: {
-    menuFixed
-  }
-};
+  export default {
+    components: {
+      menuFixed
+    }
+  };
 </script>
 
 <style lang="scss" scoped>
-.bg-header {
-  background: url(~/assets/images/header.svg);
-  background-position: center bottom;
-  background-size: 90%;
-  background-repeat: no-repeat;
-  @media (max-width: 720px) {
-    background: none;
+  .bg-header {
+    background: url(~/assets/images/header.svg);
+    background-position: center bottom;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    @media (max-width: 720px) {
+      background: none;
+    }
   }
-}
 
-.header {
-  min-height: 100vh;
-  .header--block {
-    min-height: 80vh;
-    // border: 1px solid #ddd;
-    .header--block--intro {
-      h1 {
-        font-size: 4rem;
+  .header {
+    min-height: 100vh;
+    .header--block {
+      min-height: 80vh;
+      // border: 1px solid #ddd;
+      .header--block--intro {
+        h1 span {
+          display: block;
+        }
+        p {
+          font-size: 20px;
+          opacity: 0.5;
+        }
       }
-      p {
-        font-size: 20px;
-        opacity: 0.5;
-      }
-    }
-    > div {
-      margin-bottom: 50px;
-      &:last-child {
-        margin-bottom: 0;
+      > div {
+        margin-bottom: 50px;
+        &:last-child {
+          margin-bottom: 0;
+        }
       }
     }
   }
-}
 </style>

@@ -1,5 +1,28 @@
-a {
-  color: #fff;
+h1,
+h2 {
+  font-size: 5rem;
+}
+
+h3 {
+  font-size: 4rem;
+}
+
+h4 {
+  font-size: 3rem;
+}
+
+h5 {
+  font-size: 2rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.7em;
+  font-weight: 300;
 }
 
 .span-uppercase {
@@ -8,22 +31,20 @@ a {
   text-transform: uppercase;
 }
 
-div {
-  .box-data {
-    margin-right: 50px;
+.box-data {
+  margin-right: 50px;
 
-    span:last-child {
-      margin-top: 10px;
-      font-weight: 800;
-      font-size: 20px;
-    }
+  span:last-child {
+    margin-top: 10px;
+    font-weight: 800;
+    font-size: 20px;
+  }
 
-    &:last-child {
-      margin-right: 0;
-    }
+  &:last-child {
+    margin-right: 0;
+  }
 
-    @media (max-width: 720px) {
-      margin-right: 20px;
-    }
+  @media (max-width: 720px) {
+    margin-right: 20px;
   }
 }

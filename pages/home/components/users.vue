@@ -23,5 +23,7 @@
   }
 </script>
 <style media="screen">
-
+a {
+  color: #fff;
+}
 </style>
