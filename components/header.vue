@@ -64,7 +64,7 @@
 
 <style lang="scss" scoped>
   .bg-header {
-    background: url(~/assets/images/header.svg);
+    background: url("~/assets/images/header.svg");
     background-position: center bottom;
     background-size: 90%;
     background-repeat: no-repeat;
@@ -85,6 +85,11 @@
         p {
           font-size: 20px;
           opacity: 0.5;
+        }
+        @media (max-width: 720px) {
+          h1 {
+            font-size: 4rem;
+          }
         }
       }
       > div {

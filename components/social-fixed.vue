@@ -1,10 +1,11 @@
 <template lang="html">
   <div class="social-fixed container">
     <div class="">
-      PARTICIPE: <i class="fa fa-slack"></i>
+      Participe:
+      <a href="http://slack.devparana.org/" target="_blank"><i class="fa fa-slack"></i></a>
     </div>
     <div class="">
-      COMPARTILHE: <i class="fa fa-facebook"></i> <i class="fa fa-twitter"></i>
+      Compartilhe: <a href="#" target="_blank"><i class="fa fa-facebook"></i></a> <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
     </div>
   </div>
 </template>
@@ -18,8 +19,15 @@
     text-align: center;
     position: fixed;
     bottom: 50%;
-    right: -50px;
+    right: -80px;
     transform: rotate(90deg);
+    a {
+      color: #fff;
+      transition: .3s;
+      &:hover {
+        color: $color-primary;
+      }
+    }
     > div {
       margin-right: 10px;
       &:last-child {
@@ -28,6 +36,9 @@
     }
     @media (max-width: 720px) {
       display: none;
+    }
+    .fa {
+      margin: 5px;
     }
   }
 </style>
