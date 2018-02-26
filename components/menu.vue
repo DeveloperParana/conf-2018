@@ -29,10 +29,10 @@
                 <a href="/#speakers">Palestrantes</a>
               </li>
               <li>
-                <a href="/#tickets">Comprar ticket</a>
+                <a href="/#schedule">Agenda</a>
               </li>
               <li>
-                <a href="/#schedule">Agenda</a>
+                <a href="/#tickets">Comprar ticket</a>
               </li>
               <li>
                 <a href="/#location">Localização</a>

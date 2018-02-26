@@ -3,7 +3,7 @@
     <about />
     <speakers />
     <schedule />
-    <prices />
+    <tickets />
   </div>
 </template>
 
@@ -11,13 +11,13 @@
   import about from "@/pages/home/components/about";
   import schedule from "@/pages/home/components/schedule";
   import speakers from "@/pages/home/components/speakers";
-  import prices from "@/pages/home/components/prices";
+  import tickets from "@/pages/home/components/tickets";
   export default {
     components: {
       about,
       schedule,
       speakers,
-      prices
+      tickets
     }
   }
 </script>

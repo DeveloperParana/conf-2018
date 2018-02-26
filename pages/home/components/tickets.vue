@@ -1,5 +1,5 @@
 <template>
-  <div class="size margin content" id="schedule">
+  <div class="size margin content" id="tickets">
 
     <div class="container justify-content-start">
       <div class="flex-basis-700 box-title text-align-left">

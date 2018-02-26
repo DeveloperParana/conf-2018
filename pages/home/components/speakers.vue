@@ -1,5 +1,5 @@
 <template>
-  <div class="size-padding margin content">
+  <div class="size-padding margin content" id="speakers">
 
     <div class="relative container wrap">
       <div class="rotate--box-title">
