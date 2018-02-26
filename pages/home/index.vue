@@ -2,6 +2,7 @@
   <div class="">
     <about />
     <speakers />
+    <buytickets />
     <schedule />
     <tickets />
   </div>
@@ -12,12 +13,14 @@
   import schedule from "@/pages/home/components/schedule";
   import speakers from "@/pages/home/components/speakers";
   import tickets from "@/pages/home/components/tickets";
+  import buytickets from "@/components/buytickets";
   export default {
     components: {
       about,
       schedule,
       speakers,
-      tickets
+      tickets,
+      buytickets
     }
   }
 </script>
