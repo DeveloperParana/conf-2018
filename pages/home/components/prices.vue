@@ -9,21 +9,21 @@
       </div>
     </div>
 
-    <div class="prices container wrap">
-      <div class="prices--item col-12 col-xs-6 col-sm-6 col-md-6 col-lg-4" v-for="price in prices" :key="price.id">
-        <div class="prices--item--content container" :class="{ active :  currentPrice === price.id}" v-on:mouseover="currentPrice = price.id">
-          <div class="prices--item--content--info flex-grow-1 container column align-center">
+    <div class="tickets container wrap">
+      <div class="tickets--item col-12 col-xs-6 col-sm-6 col-md-6 col-lg-4" v-for="ticket in tickets" :key="ticket.id">
+        <div class="tickets--item--content container" :class="{ active :  currentticket === ticket.id}" v-on:mouseover="currentticket = ticket.id">
+          <div class="tickets--item--content--info flex-grow-1 container column align-center">
             <div class="value">
-              {{ '$' + price.value}}
+              {{ '$' + ticket.value}}
             </div>
             <div class="date">
-              {{price.date}}
+              {{ticket.date}}
             </div>
           </div>
-          <div class="prices--item--content--title container align-center">
-            <strong>{{price.title}}</strong>
+          <div class="tickets--item--content--title container align-center">
+            <strong>{{ticket.title}}</strong>
           </div>
-          <div class="prices--item--content--button">
+          <div class="tickets--item--content--button">
             <button type="button" name="button" class="btn btn-secundary">Comprar tickets</button>
           </div>
         </div>
@@ -41,6 +41,7 @@
             <span>DEVPARANÁ</span>
             <span>2018</span>
           </h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           <div class="container wrap align-items-end">
             <div class="">
               <ul class="container shop-check">
@@ -79,32 +80,21 @@
 </template>
 
 <script>
+  import {
+    mapState
+  }
+  from 'vuex'
+
   export default {
     data() {
-      return {
-        currentPrice: 1,
-        tshirtSize: 'large',
-        prices: [{
-          id: 1,
-          value: 40,
-          title: '1 Lote',
-          date: '12 de Setembro - 23 de Setembro',
-          link: ''
-        }, {
-          id: 2,
-          value: 60,
-          title: '2 Lote',
-          date: '12 de Setembro - 23 de Setembro',
-          link: ''
-        }, {
-          id: 3,
-          value: 80,
-          title: '3 Lote',
-          date: '12 de Setembro - 23 de Setembro',
-          link: ''
-        }]
+        return {
+          currentticket: 1,
+          tshirtSize: 'large',
+        }
+      },
+      computed: {
+        ...mapState(['tickets'])
       }
-    }
   }
 </script>
 
@@ -141,13 +131,18 @@
       padding: 20px 40px;
       box-sizing: border-box;
       h3 {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         span {
           display: block;
         }
         @media screen and (max-width: 720px) {
           font-size: 7vw;
         }
+      }
+      p {
+        margin-bottom: 20px;
+        opacity: .7;
+        font-size: 16px;
       }
       ul {
         list-style: none;
@@ -168,20 +163,20 @@
     }
   }
 
-  .prices {
-    .prices--item {
+  .tickets {
+    .tickets--item {
       padding: 20px;
       box-sizing: border-box;
       text-align: center;
       position: relative;
-      .prices--item--content {
+      .tickets--item--content {
         cursor: pointer;
         border: 2px solid $color-primary;
         border-radius: 10px;
         background: $color-dark;
         transition: .3s;
         margin-bottom: 50px;
-        .prices--item--content--info {
+        .tickets--item--content--info {
           min-height: 200px;
           .value {
             font-size: 5rem;
@@ -193,7 +188,7 @@
             color: $color-primary;
           }
         }
-        .prices--item--content--title {
+        .tickets--item--content--title {
           width: 50px;
           border-left: 2px solid $color-primary;
           color: $color-primary;
@@ -202,7 +197,7 @@
             transform: rotate(90deg);
           }
         }
-        .prices--item--content--button {
+        .tickets--item--content--button {
           position: absolute;
           bottom: -50px;
           right: 20px;
@@ -212,7 +207,7 @@
         &:focus,
         &:hover,
         &.active {
-          .prices--item--content--button {
+          .tickets--item--content--button {
             display: block;
             .btn {
               border: 2px solid $color-primary;
@@ -225,13 +220,13 @@
           background: $color-primary;
           border: 2px solid $color-dark;
           color: $color-dark;
-          .prices--item--content--info {
+          .tickets--item--content--info {
             .date {
               color: $color-dark;
               opacity: .5s;
             }
           }
-          .prices--item--content--title {
+          .tickets--item--content--title {
             border-left: 2px solid $color-dark;
             color: $color-dark;
           }
