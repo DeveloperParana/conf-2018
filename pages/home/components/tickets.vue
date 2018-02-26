@@ -12,46 +12,25 @@
     <div class="tickets container wrap">
       <div class="tickets--item col-12 col-xs-6 col-sm-6 col-md-6 col-lg-4" v-for="ticket in tickets" :key="ticket.id">
 
-        <div v-if="ticket.soldOut">
-          <div class="tickets--item--content container soldout">
-            <div class="soldout-span">
-              <div class="span">
-                ESGOTADO
-              </div>
-            </div>
-            <div class="tickets--item--content--info flex-grow-1 container column align-center">
-              <div class="value">
-                {{ '$' + ticket.value}}
-              </div>
-              <div class="date">
-                {{ticket.date}}
-              </div>
-            </div>
-            <div class="tickets--item--content--title container align-center">
-              <strong>{{ticket.title}}</strong>
-            </div>
-            <div class="tickets--item--content--button" v-show="!ticket.soldOut">
-              <button type="button" name="button" class="btn btn-secundary">Comprar tickets</button>
+        <div class="tickets--item--content container" :class="{ active :  currentticket === ticket.id, soldout : ticket.soldout}" v-on:mouseover="currentticket = ticket.id">
+          <div class="soldout-span" v-if="ticket.soldout">
+            <div class="span">
+              ESGOTADO
             </div>
           </div>
-        </div>
-
-        <div v-else>
-          <div class="tickets--item--content container" :class="{ active :  currentticket === ticket.id}" v-on:mouseover="currentticket = ticket.id">
-            <div class="tickets--item--content--info flex-grow-1 container column align-center">
-              <div class="value">
-                {{ '$' + ticket.value}}
-              </div>
-              <div class="date">
-                {{ticket.date}}
-              </div>
+          <div class="tickets--item--content--info flex-grow-1 container column align-center">
+            <div class="value">
+              {{ '$' + ticket.value}}
             </div>
-            <div class="tickets--item--content--title container align-center">
-              <strong>{{ticket.title}}</strong>
+            <div class="date">
+              {{ticket.date}}
             </div>
-            <div class="tickets--item--content--button" v-show="!ticket.soldOut">
-              <button type="button" name="button" class="btn btn-secundary">Comprar tickets</button>
-            </div>
+          </div>
+          <div class="tickets--item--content--title container align-center">
+            <strong>{{ticket.title}}</strong>
+          </div>
+          <div class="tickets--item--content--button" v-show="!ticket.soldout">
+            <button type="button" name="button" class="btn btn-secundary">Comprar tickets</button>
           </div>
         </div>
 
@@ -232,7 +211,6 @@
           display: none;
           z-index: 100;
         }
-
         &:focus,
         &:hover,
         &.active {
@@ -260,7 +238,6 @@
             color: $color-dark;
           }
         }
-
         &.soldout {
           background: $color-primary;
           border: 1px solid $color-dark;
@@ -277,7 +254,6 @@
             border-color: $color-dark;
             color: $color-dark;
           }
-
           .soldout-span {
             position: absolute;
             top: 0;
@@ -291,15 +267,14 @@
             align-items: center;
             font-weight: bold;
             font-size: 2rem;
-              div {
-                transform: rotate(-35deg);
-              }
+            div {
+              transform: rotate(-35deg);
+            }
           }
-
           &::after {
             width: 100%;
             height: 100%;
-            background: rgba(0,0,0,.7);
+            background: rgba(0, 0, 0, .7);
             content: "";
             text-align: center;
             display: block;

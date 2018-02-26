@@ -61,20 +61,20 @@ export const state = () => ({
     title: '1 Lote',
     date: '12 de Setembro - 23 de Setembro',
     link: '',
-    soldOut: true
+    soldout: true
   }, {
     id: 2,
     value: 60,
     title: '2 Lote',
     date: '12 de Setembro - 23 de Setembro',
     link: '',
-    soldOut: false
+    soldout: false
   }, {
     id: 3,
     value: 80,
     title: '3 Lote',
     date: '12 de Setembro - 23 de Setembro',
     link: '',
-    soldOut: false
+    soldout: false
   }]
 })
