@@ -44,7 +44,14 @@
   .footer {
     padding: 100px 50px;
     background: $color-primary;
+    background: url("~/assets/images/icon.svg"), $color-primary, ;
+    background-position: bottom left;
+    background-size: 300px;
+    background-repeat: no-repeat;
     width: 100%;
+    @media screen and (max-width: 980px) {
+      background: $color-primary;
+    }
     .box--footer {
       padding: 20px;
       box-sizing: border-box;
@@ -57,11 +64,10 @@
         li {
           margin-bottom: 10px;
           a {
-            color: $color-white;
-            opacity: .5;
-              &:hover {
-                opacity: 1;
-              }
+            color: #9CD4AD;
+            &:hover {
+              color: #fff;
+            }
           }
         }
       }

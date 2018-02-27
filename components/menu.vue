@@ -162,6 +162,8 @@
           left: 0;
           height: 100vh;
           width: 100%;
+          z-index: 12;
+          background: rgba($color-dark, .8);
           ul li {
             margin-bottom: 30px;
             a {
