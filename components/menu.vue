@@ -162,8 +162,6 @@
           left: 0;
           height: 100vh;
           width: 100%;
-          z-index: 99;
-          background: rgba($color-dark, .9);
           ul li {
             margin-bottom: 30px;
             a {
@@ -195,11 +193,10 @@
     &.menu-fixed {
       position: fixed;
       animation: showMenu .5s backwards;
-      z-index: 10;
+      z-index: 11;
       background: $color-dark;
       .menu--content {
         min-height: 80px;
-        background: $color-dark;
         @media (max-width: 980px) {
           background: transparent;
         }

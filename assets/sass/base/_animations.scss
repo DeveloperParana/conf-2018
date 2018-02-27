@@ -3,5 +3,8 @@
   height: 15px;
   background: $color-primary;
   position: absolute;
-
+  z-index: 9;
+    @media (max-width: 480px) {
+      display: none;
+    }
 }

@@ -21,6 +21,7 @@
     bottom: 50%;
     right: -80px;
     transform: rotate(90deg);
+    z-index: 10;
     a {
       color: #fff;
       transition: .3s;

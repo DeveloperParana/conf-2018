@@ -49,7 +49,7 @@
 
       </div>
 
-      <div class="rect-animation rellax" data-rellax-speed="4" data-rellax-percentage="1" style="left: 40%;"></div>
+      <div class="rect-animation rellax" data-rellax-speed="4" data-rellax-percentage="1" style="left: 40%; bottom: 300px"></div>
 
     </div>
   </header>

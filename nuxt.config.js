@@ -26,7 +26,6 @@ module.exports = {
   ],
   plugins: [
     {src: '~plugins/smooth-scroll.js', ssr: false},
-    {src: '~plugins/menuspy.js', ssr: false},
     {src: '~plugins/ga.js', ssr: false}
   ],
   /*

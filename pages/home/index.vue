@@ -5,6 +5,8 @@
     <buytickets />
     <schedule />
     <tickets />
+    <location />
+    <contact />
   </div>
 </template>
 
@@ -14,13 +16,17 @@
   import speakers from "@/pages/home/components/speakers";
   import tickets from "@/pages/home/components/tickets";
   import buytickets from "@/components/buytickets";
+  import location from "@/pages/home/components/location";
+  import contact from "@/pages/home/components/contact";
   export default {
     components: {
       about,
       schedule,
       speakers,
       tickets,
-      buytickets
+      buytickets,
+      location,
+      contact
     }
   }
 </script>

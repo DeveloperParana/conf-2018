@@ -1,11 +1,19 @@
 <template>
-  <div>
+  <div class="overflow">
     <socialFixed/>
     <headerTop/>
     <nuxt/>
     <footerBottom/>
   </div>
 </template>
+
+<style lang="scss">
+  .overflow {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+  }
+</style>
 
 <script>
   import headerTop from '@/components/header'

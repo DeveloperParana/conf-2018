@@ -52,12 +52,24 @@ p {
 .box-title {
   text-transform: uppercase;
   margin-bottom: 100px;
-    h2 span {
-      display: block
+
+  h2 span {
+    display: block;
+  }
+  @media (max-width: 720px) {
+    h2 {
+      font-size: 10vw;
     }
-    @media (max-width: 720px) {
-      h2 {
-        font-size: 10vw;
-      }
-    }
+  }
+}
+
+.list-style-none {
+  list-style: none;
+}
+
+h2 span {
+  display: block;
+  @media screen and (max-width: 720px) {
+    font-size: 7vw;
+  }
 }
