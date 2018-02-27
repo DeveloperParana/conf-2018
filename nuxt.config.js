@@ -14,7 +14,10 @@ module.exports = {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css' }
-    ]
+    ],
+    script: [
+      { src: 'https://cdnjs.cloudflare.com/ajax/libs/rellax/1.5.1/rellax.min.js' }
+    ],
   },
   css: [
     { src: '@/assets/sass/main.scss', lang: 'scss' },

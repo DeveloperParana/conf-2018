@@ -26,6 +26,10 @@
         </div>
       </div>
     </div>
+
+    <div class="rect-animation rellax" data-rellax-speed="4" data-rellax-percentage="1" style="left: -250px; top: 300px;"></div>
+    <div class="rect-animation rellax" data-rellax-speed="4" data-rellax-percentage="1" style="right: 100px; bottom: 200px;"></div>
+
   </div>
 </template>
 

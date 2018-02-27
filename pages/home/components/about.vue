@@ -15,40 +15,43 @@
       <p>Careful balance of practical and visionary talks from renowned speakers make React Day a unique place to meet and learn from the most forward-thinking international community members, influencers and open source maintainers.</p>
     </div>
 
+    <div class="rect-animation rellax" data-rellax-speed="4" data-rellax-percentage="1" style="left: -100px; bottom: 300px"></div>
+    <div class="rect-animation rellax" data-rellax-speed="4" data-rellax-percentage="1" style="right: 0px;"></div>
+
   </div>
 </template>
 
 <script>
-export default {};
+  export default {};
 </script>
 
 <style lang="scss" scoped>
-.about--block {
-  margin-top: 7rem;
-  h2 {
-    span {
-      display: block;
-      width: 100%;
-      font-size: 2rem;
-    }
-    @media screen and (min-width: 400px) and (max-width: 1200px) {
+  .about--block {
+    margin-top: 7rem;
+    h2 {
       span {
-        font-size: calc(16px + (90 - 16) * (100vw - 400px) / (1200 - 400));
+        display: block;
+        width: 100%;
+        font-size: 2rem;
+      }
+      @media screen and (min-width: 400px) and (max-width: 1200px) {
+        span {
+          font-size: calc(16px + (90 - 16) * (100vw - 400px) / (1200 - 400));
+        }
+      }
+      @media screen and (min-width: 1200px) {
+        span {
+          font-size: 7vw;
+        }
       }
     }
-    @media screen and (min-width: 1200px) {
-      span {
-        font-size: 7vw;
+    .about--block--title {
+      p {
+        margin-bottom: 2rem;
+        font-size: 1.2rem;
+        line-height: 1.7em;
+        font-weight: 300;
       }
     }
   }
-  .about--block--title {
-    p {
-      margin-bottom: 2rem;
-      font-size: 1.2rem;
-      line-height: 1.7em;
-      font-weight: 300;
-    }
-  }
-}
 </style>

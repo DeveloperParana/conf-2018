@@ -1,49 +1,51 @@
 <template lang="html">
   <nav>
-    <div class="menu">
-      <div class="menu--content size margin container align-center">
+    <div class="menu--relative">
+      <div class="menu">
+        <div class="menu--content size margin container align-center">
 
-        <div class="menu--content--logo flex-grow-1">
-          <router-link :to="{ name: 'home', params: {} }">
-            <img src="../assets/images/logo.svg" width="100" alt="Logo devparaná">
-          </router-link>
-        </div>
-
-        <div class="menu--content--hamburger" @click="showMenu = !showMenu">
-          <i class="fa fa-bars"></i>
-        </div>
-
-        <div class="menu--content--links" :class="{'menu-responsive' : showMenu}">
-          <div class="menu-close" @click="showMenu = !showMenu">
-            <i class="fa fa-times"></i>
+          <div class="menu--content--logo flex-grow-1">
+            <router-link :to="{ name: 'home', params: {} }">
+              <img src="../assets/images/logo.svg" width="100" alt="Logo devparaná">
+            </router-link>
           </div>
-          <nav>
-            <ul class="container wrap">
-              <li>
-                <router-link :to="{ name: 'home', params: {} }" class="active">Página inicial</router-link>
-              </li>
-              <li>
-                <a href="/#about">Sobre</a>
-              </li>
-              <li>
-                <a href="/#speakers">Palestrantes</a>
-              </li>
-              <li>
-                <a href="/#schedule">Agenda</a>
-              </li>
-              <li>
-                <a href="/#tickets">Comprar ticket</a>
-              </li>
-              <li>
-                <a href="/#location">Localização</a>
-              </li>
-              <li>
-                <a href="/#contact">Contato</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
 
+          <div class="menu--content--hamburger" @click="showMenu = !showMenu">
+            <i class="fa fa-bars"></i>
+          </div>
+
+          <div class="menu--content--links" :class="{'menu-responsive' : showMenu}">
+            <div class="menu-close" @click="showMenu = !showMenu">
+              <i class="fa fa-times"></i>
+            </div>
+            <nav>
+              <ul class="container wrap">
+                <li>
+                  <router-link :to="{ name: 'home', params: {} }" class="active">Página inicial</router-link>
+                </li>
+                <li>
+                  <a href="/#about">Sobre</a>
+                </li>
+                <li>
+                  <a href="/#speakers">Palestrantes</a>
+                </li>
+                <li>
+                  <a href="/#schedule">Agenda</a>
+                </li>
+                <li>
+                  <a href="/#tickets">Comprar ticket</a>
+                </li>
+                <li>
+                  <a href="/#location">Localização</a>
+                </li>
+                <li>
+                  <a href="/#contact">Contato</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+        </div>
       </div>
     </div>
   </nav>
@@ -99,13 +101,17 @@
 
 <style lang="scss" scoped>
   $size-menu: 20vh;
-
   .fa {
     font-size: 22px;
     cursor: pointer;
     &:hover {
       color: $color-primary
     }
+  }
+
+  .menu--relative {
+    position: relative;
+    min-height: $size-menu;
   }
 
   .menu {
@@ -190,6 +196,7 @@
       position: fixed;
       animation: showMenu .5s backwards;
       z-index: 10;
+      background: $color-dark;
       .menu--content {
         min-height: 80px;
         background: $color-dark;
