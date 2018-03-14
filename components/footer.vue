@@ -1,6 +1,6 @@
 <template lang="html">
   <footer>
-    <div class="footer">
+    <div class="footer relative">
       <div class="size margin container align-items-start justify-content-center wrap">
 
         <div class="box--footer">
@@ -31,7 +31,11 @@
           </ul>
         </div>
 
+        <div class="rect-animation light rellax" data-rellax-speed="4" data-rellax-percentage="1" style="left: 0; top: -100px;"></div>
+        <div class="rect-animation dark rellax" data-rellax-speed="4" data-rellax-percentage="1" style="right: -150px; top: 0;"></div>
+
       </div>
+
     </div>
   </footer>
 </template>
@@ -44,7 +48,7 @@
   .footer {
     padding: 100px 50px;
     background: $color-primary;
-    background: url("~/assets/images/icon.svg"), $color-primary, ;
+    background: url("~/assets/images/icon.svg"), $color-primary;
     background-position: bottom left;
     background-size: 300px;
     background-repeat: no-repeat;
