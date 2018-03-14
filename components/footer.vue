@@ -23,11 +23,11 @@
 
         <div class="box--footer">
           <strong>Redes sociais</strong>
-          <ul>
-            <li><a href="#">Github</a></li>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Slack</a></li>
+          <ul class="social container wrap">
+            <li><a href="#" target="_blank"><i class="fa fa-github"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fa fa-slack"></i></a></li>
           </ul>
         </div>
 
@@ -71,6 +71,26 @@
             color: #9CD4AD;
             &:hover {
               color: #fff;
+            }
+          }
+        }
+        &.social {
+          li a {
+            width: 40px;
+            height: 40px;
+            font-size: 20px;
+            background: transparent;
+            border: 1px solid $color-dark;
+            color: $color-dark;
+            border-radius: 50%;
+            margin-right: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: .3s;
+            &:hover {
+              background: $color-dark;
+              color: $color-primary;
             }
           }
         }
