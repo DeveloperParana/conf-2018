@@ -24,10 +24,10 @@
         <div class="box--footer">
           <strong>Redes sociais</strong>
           <ul class="social container wrap">
-            <li><a href="#" target="_blank"><i class="fa fa-github"></i></a></li>
-            <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#" target="_blank"><i class="fa fa-slack"></i></a></li>
+            <li><a href="https://github.com/DeveloperParana" target="_blank"><i class="fa fa-github"></i></a></li>
+            <li><a href="https://twitter.com/developerparana" target="_blank"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://www.facebook.com/DeveloperParana/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="http://slack.devparana.org/" target="_blank"><i class="fa fa-slack"></i></a></li>
           </ul>
         </div>
 
