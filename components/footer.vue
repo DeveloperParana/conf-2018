@@ -87,7 +87,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            transition: .3s;
+            transition: 0.3s;
             &:hover {
               background: $color-dark;
               color: $color-primary;

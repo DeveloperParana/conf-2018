@@ -1,8 +1,7 @@
 {
-  "name": "cont-2018",
+  "name": "conf-2018",
   "version": "1.0.0",
   "description": "Dev Paraná Conference 2018",
-  "author": "Leonardo Elias <leonardo.elias4@gmail.com>",
   "private": true,
   "scripts": {
     "dev": "nuxt",
@@ -13,6 +12,13 @@
     "precommit": "npm run lint",
     "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
+  "author": "Leonardo Elias <leonardo.elias4@gmail.com>",
+  "contributors": [
+    {
+      "name": "Gustavo Quinalha",
+      "email": "gusquinalha@gmail.com"
+    }
+  ],
   "dependencies": {
     "nuxt": "^1.0.0",
     "push-dir": "^0.4.1"
