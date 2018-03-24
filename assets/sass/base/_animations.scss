@@ -4,7 +4,15 @@
   background: $color-primary;
   position: absolute;
   z-index: 9;
-    @media (max-width: 480px) {
-      display: none;
-    }
+  @media (max-width: 480px) {
+    display: none;
+  }
+
+  &.light {
+    background: $color-white;
+  }
+
+  &.dark {
+    background: $color-dark;
+  }
 }

@@ -1,11 +1,27 @@
 .btn {
   border-radius: 10px;
 
+  &:hover {
+    background-color: darken(#ddd, 20);
+  }
+
   &.btn-primary {
     background: $color-primary;
+
+    &:hover {
+      background-color: darken($color-primary, 10);
+    }
   }
 
   &.btn-secundary {
     background: $color-dark;
+
+    &:hover {
+      background-color: darken($color-dark, 10);
+    }
   }
+}
+
+.btn:hover {
+  filter: brightness(100%);
 }

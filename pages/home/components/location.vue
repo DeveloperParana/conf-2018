@@ -4,9 +4,8 @@
     <div class="container wrap location align-center">
       <div class="flex-grow-1 flex-basis-300">
         <h2>
-          <span>LOCALIZAÇÃO</span>
-          <span>DO</span>
-          <span>EVENTO</span>
+          <span>LOCALIZAÇÃO </span>
+          <span>DO EVENTO</span>
         </h2>
 
         <ul class="container wrap list-style-none margin-top-50">
