@@ -76,5 +76,39 @@ export const state = () => ({
     date: '12 de Setembro - 23 de Setembro',
     link: '',
     soldout: false
+  }],
+
+  sponsors: [{
+    id: 1,
+    name: 'Devparaná',
+    address: 'https://devparana.org',
+    image: 'devparana'
+  }, {
+    id: 2,
+    name: 'Devparaná',
+    address: 'https://devparana.org',
+    image: 'devparana'
+  }, {
+    id: 3,
+    name: 'Devparaná',
+    address: 'https://devparana.org',
+    image: 'devparana'
+  }],
+
+  support: [{
+    id: 1,
+    name: 'Devparaná',
+    address: 'https://devparana.org',
+    image: 'devparana'
+  }, {
+    id: 2,
+    name: 'Devparaná',
+    address: 'https://devparana.org',
+    image: 'devparana'
+  }, {
+    id: 3,
+    name: 'Devparaná',
+    address: 'https://devparana.org',
+    image: 'devparana'
   }]
 })

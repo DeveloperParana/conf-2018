@@ -7,6 +7,8 @@
     <tickets />
     <location />
     <contact />
+    <sponsors />
+    <support />
   </div>
 </template>
 
@@ -18,6 +20,9 @@
   import buytickets from "@/components/buytickets";
   import location from "@/pages/home/components/location";
   import contact from "@/pages/home/components/contact";
+  import sponsors from "@/pages/home/components/sponsors";
+  import support from "@/pages/home/components/support";
+
   export default {
     components: {
       about,
@@ -26,7 +31,9 @@
       tickets,
       buytickets,
       location,
-      contact
+      contact,
+      sponsors,
+      support
     }
   }
 </script>
