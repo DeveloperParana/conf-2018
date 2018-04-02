@@ -1,15 +1,16 @@
 <template>
   <div class="sponsors--block justify-content-center container" id="sponsors">
+    <div class="size margin">
+      <h2 class="sponsors--title flex-grow-1">Patrocinadores</h2>
 
-    <h2 class="sponsors--title flex-grow-1">Patrocinadores</h2>
-
-    <ul class="sponsors--list">
-      <li class="sponsors--item" v-for="sponsor in sponsors" :key="sponsor.id">
-        <a href="">
-          <img class="sponsors--image" :src="require('@/assets/images/sponsors/' + sponsor.image + '.png')" alt="">  
-        </a>  
-      </li>       
-    </ul>
+      <ul class="sponsors--list">
+        <li class="sponsors--item" v-for="sponsor in sponsors" :key="sponsor.id">
+          <a href="">
+            <img class="sponsors--image" :src="require('@/assets/images/sponsors/' + sponsor.image + '.png')" alt="">
+          </a>
+        </li>
+      </ul>
+    </div>
 
     <div class="rect-animation rellax" data-rellax-speed="4" data-rellax-percentage="1" style="left: 0px; bottom: 200px"></div>
     <div class="rect-animation rellax" data-rellax-speed="4" data-rellax-percentage="1" style="right: 0px; bottom: 540px"></div>
@@ -52,6 +53,7 @@
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    overflow-x: auto;
   }
 
   .sponsors--image {

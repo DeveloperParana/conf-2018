@@ -1,5 +1,5 @@
 .btn {
-  border-radius: 10px;
+  border-radius: 6px;
 
   &:hover {
     background-color: darken(#ddd, 20);
@@ -9,7 +9,7 @@
     background: $color-primary;
 
     &:hover {
-      background-color: darken($color-primary, 10);
+      background-color: darken($color-primary, 20);
     }
   }
 

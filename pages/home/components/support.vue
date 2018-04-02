@@ -1,15 +1,17 @@
 <template>
   <div class="support--block justify-content-center container" id="support">
 
-    <h2 class="support--title flex-grow-1">Apoio</h2>
+    <div class="size margin">
+      <h2 class="support--title flex-grow-1">Apoio</h2>
 
-    <ul class="support--list">
-      <li class="support--item" v-for="supporter in support" :key="supporter.id">
-        <a href="">
-          <img class="support--image" :src="require('@/assets/images/support/' + supporter.image + '.png')" alt="">  
-        </a>  
-      </li>       
-    </ul>
+      <ul class="support--list">
+        <li class="support--item" v-for="supporter in support" :key="supporter.id">
+          <a href="">
+            <img class="support--image" :src="require('@/assets/images/support/' + supporter.image + '.png')" alt="">
+          </a>
+        </li>
+      </ul>
+    </div>
 
     <button type="button" name="button" class="btn support--button">Seja um parceiro</button>
 
@@ -53,6 +55,7 @@
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    overflow-x: auto;
   }
 
   .support--image {
@@ -74,5 +77,5 @@
     }
   }
 
-  
+
 </style>

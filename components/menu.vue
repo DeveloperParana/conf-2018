@@ -52,162 +52,164 @@
 </template>
 
 <script>
-  export default {
-    data() {
-        return {
-          showMenu: false
-        }
-      },
-      mounted() {
-        var scroll = new SmoothScroll('a[href*="#"]')
+export default {
+  data() {
+    return {
+      showMenu: false
+    }
+  },
+  mounted() {
+    var scroll = new SmoothScroll('a[href*="#"]')
 
-        let vm = this
-        var links = this.$el.querySelectorAll('.menu--content--links nav ul li a')
+    let vm = this
+    var links = this.$el.querySelectorAll('.menu--content--links nav ul li a')
 
-        window.addEventListener('scroll', function() {
-          var scrollpos = window.scrollY
-          var menuClass = document.querySelector(".menu");
+    window.addEventListener('scroll', function() {
+      var scrollpos = window.scrollY
+      var menuClass = document.querySelector(".menu");
 
-          scrollpos = window.scrollY
-          if (scrollpos > 600) {
-            menuClass.classList.add("menu-fixed");
-          } else {
-            menuClass.classList.remove("menu-fixed")
-          }
-        })
-
-        function closeMenu() {
-          vm.showMenu = false
-          links.forEach(function(link) {
-            link.classList.remove("active")
-          })
-        }
-
-        links.forEach(function(link) {
-          link.addEventListener('click', function() {
-            closeMenu();
-            link.classList.add("active")
-          })
-        })
-
-        // var elm = document.querySelector('.menu--content--links')
-        // var ms = new MenuSpy(elm, {
-        //   threshold: -700,
-        //   hashTimeout: 2000
-        // })
+      scrollpos = window.scrollY
+      if (scrollpos > 600) {
+        menuClass.classList.add("menu-fixed");
+      } else {
+        menuClass.classList.remove("menu-fixed")
       }
+    })
+
+    function closeMenu() {
+      vm.showMenu = false
+      links.forEach(function(link) {
+        link.classList.remove("active")
+      })
+    }
+
+    links.forEach(function(link) {
+      link.addEventListener('click', function() {
+        closeMenu();
+        link.classList.add("active")
+      })
+    })
+
+    // var elm = document.querySelector('.menu--content--links')
+    // var ms = new MenuSpy(elm, {
+    //   threshold: -700,
+    //   hashTimeout: 2000
+    // })
   }
+}
 </script>
 
 <style lang="scss" scoped>
-  $size-menu: 20vh;
-  .fa {
+$size-menu: 20vh;
+.fa {
     font-size: 22px;
     cursor: pointer;
     &:hover {
-      color: $color-primary
+        color: $color-primary;
     }
-  }
+}
 
-  .menu--relative {
+.menu--relative {
     position: relative;
     min-height: $size-menu;
-  }
+}
 
-  .menu {
+.menu {
     width: 100%;
     @keyframes showMenu {
-      from {
-        opacity: 0;
-      }
-      to {}
+        from {
+            opacity: 0;
+        }
+        to {}
     }
     .menu--content {
-      min-height: $size-menu;
-      .menu--content--logo {
-        img {
-          max-width: 100%;
-        }
-      }
-      .menu--content--links {
-        ul {
-          list-style: none;
-          li {
-            margin: 10px;
-            a {
-              color: #fff;
-              text-transform: uppercase;
-              font-weight: 800;
-              font-size: 14px;
-              &.active,
-              &:hover {
-                border-bottom: 5px solid $color-primary;
-                padding-bottom: 10px;
-              }
+        min-height: $size-menu;
+        .menu--content--logo {
+            img {
+                max-width: 100%;
             }
-          }
         }
-        @media (max-width: 980px) {
-          display: none
-        }
-        .menu-close {
-          display: none;
-        }
-        &.menu-responsive {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          position: fixed;
-          top: 0;
-          left: 0;
-          height: 100vh;
-          width: 100%;
-          z-index: 12;
-          background: rgba($color-dark, .8);
-          ul li {
-            margin-bottom: 30px;
-            a {
-              font-size: 2rem;
+        .menu--content--links {
+            ul {
+                list-style: none;
+                li {
+                    margin: 10px;
+                    a {
+                        color: #fff;
+                        text-transform: uppercase;
+                        font-weight: 800;
+                        font-size: 14px;
+                        &.active,
+                        &:hover {
+                            border-bottom: 5px solid $color-primary;
+                            padding-bottom: 10px;
+                        }
+                    }
+                }
             }
-          }
-          .container {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-          }
-          .menu-close {
-            display: flex;
-            position: fixed;
-            top: 20px;
-            right: 20px;
-          }
-          animation: showMenu .3s backwards;
+            @media (max-width: 980px) {
+                display: none;
+            }
+            .menu-close {
+                display: none;
+            }
+            &.menu-responsive {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: fixed;
+                top: 0;
+                left: 0;
+                height: 100vh;
+                width: 100%;
+                z-index: 12;
+                background: rgba($color-dark, .8);
+                ul li {
+                    margin-bottom: 30px;
+                    a {
+                        font-size: 2rem;
+                    }
+                }
+                .container {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                }
+                .menu-close {
+                    display: flex;
+                    position: fixed;
+                    top: 20px;
+                    right: 20px;
+                }
+                animation: showMenu 0.3s backwards;
+            }
         }
-      }
-      .menu--content--hamburger {
-        display: none;
-        @media (max-width: 980px) {
-          display: flex;
+        .menu--content--hamburger {
+            display: none;
+            @media (max-width: 980px) {
+                display: flex;
+            }
         }
-      }
     }
     &.menu-fixed {
-      position: fixed;
-      animation: showMenu .5s backwards;
-      z-index: 11;
-      background: $color-dark;
-      .menu--content {
-        min-height: 80px;
-        @media (max-width: 980px) {
-          background: transparent;
+        position: fixed;
+        animation: showMenu 0.5s backwards;
+        z-index: 11;
+        background: $color-dark;
+        box-shadow: 0 2px 20px 0 darken($color-dark, 10);
+
+        .menu--content {
+            min-height: 80px;
+            @media (max-width: 980px) {
+                background: transparent;
+            }
+            .menu--content--logo {
+                img {
+                    width: 50px;
+                }
+            }
         }
-        .menu--content--logo {
-          img {
-            width: 50px;
-          }
-        }
-      }
     }
-  }
+}
 </style>

@@ -68,7 +68,7 @@
         li {
           margin-bottom: 10px;
           a {
-            color: #9CD4AD;
+            color: $color-dark;
             &:hover {
               color: #fff;
             }
