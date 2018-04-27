@@ -6,18 +6,7 @@
         <div class="box--footer">
           <strong>Para participantes</strong>
           <ul>
-            <li><a href="#">Código de conduta</a></li>
-            <li><a href="#">Google developers</a></li>
-            <li><a href="#">Código de conduta</a></li>
-            <li><a href="#">Google developers</a></li>
-          </ul>
-        </div>
-
-        <div class="box--footer">
-          <strong>Para participantes</strong>
-          <ul>
-            <li><a href="#">Código de conduta</a></li>
-            <li><a href="#">Google developers</a></li>
+            <li><a href="https://github.com/DeveloperParana/conduta">Código de conduta</a></li>
           </ul>
         </div>
 
