@@ -4,29 +4,36 @@
       <menuFixed/>
       <div class="header--block size margin container column">
 
-        <div class="header--block--date container">
-          <div class="box-data container column">
+        <div class="header--block--date container wrap">
+          <div class="box-data container column flex-basis-100">
             <span class="span-uppercase">DATA</span>
             <span class="font-strong">28 de julho</span>
           </div>
-          <div class="box-data container column">
+          <div class="box-data container column flex-basis-200 flex-grow-1">
             <span class="span-uppercase">Localização</span>
             <span class="font-strong">Parque Internacional de Exposições Francisco Feio Ribeiro - Maringá PR</span>
           </div>
         </div>
 
         <div class="header--block--intro">
-          <h1>
+          <!-- <h1>
             <span>DevParaná</span>
             <span>Conference 2018</span>
-          </h1>
+          </h1> -->
+          <div class="logo">
+            <img src="~/assets/images/logo-full.svg" width="100%" alt="">
+          </div>
           <p>Um evento de desenvolvedores para desenvolvedores!</p>
+          <div class="header--block--buttons container wrap">
+            <div class="flex-grow-1">
+              <a href="/#tickets"><button type="button" name="button" class="btn btn-full btn-primary margin-right-10 margin-bottom-10">Comprar tickets</button></a>
+            </div>
+            <div class="flex-grow-1">
+              <a href="/#speakers"><button type="button" name="button" class="btn btn-full btn-outline margin-bottom-10">Palestrantes</button></a>
+            </div>
+          </div>
         </div>
 
-        <div class="header--block--buttons">
-          <a href="/#tickets"><button type="button" name="button" class="btn btn-primary margin-right-10 margin-bottom-10">Comprar tickets</button></a>
-          <a href="/#speakers"><button type="button" name="button" class="btn btn-outline margin-bottom-10">Palestrantes</button></a>
-        </div>
 
         <div class="header--block--days container wrap">
           <div class="box-data container column">
@@ -81,18 +88,24 @@ export default {
     .header--block {
         min-height: 80vh;
         .header--block--intro {
-            h1 span {
-                display: block;
-            }
+            // h1 span {
+            //     display: block;
+            // }
             p {
                 font-size: 20px;
                 opacity: 0.7;
+                margin-top: 10px;
+                margin-bottom: 10px;
             }
-            @media (max-width: 720px) {
-                h1 {
-                    font-size: 4rem;
-                }
+            .logo {
+                width: 100%;
+                max-width: 400px;
             }
+            // @media (max-width: 720px) {
+            //     h1 {
+            //         font-size: 4rem;
+            //     }
+            // }
         }
         > div {
             margin-bottom: 50px;
@@ -107,6 +120,17 @@ export default {
     max-width: 600px;
     > div:first-child {
         min-width: 130px;
+    }
+}
+
+.header--block--buttons {
+    width: 100%;
+    max-width: 500px;
+    > div {
+        margin-right: 20px;
+        &:last-child {
+            margin-right: 0;
+        }
     }
 }
 </style>
