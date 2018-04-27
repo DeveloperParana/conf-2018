@@ -58,25 +58,34 @@ export const state = () => ({
   tickets: [{
     id: 1,
     value: 40,
-    title: '1 Lote',
-    date: '12 de Setembro - 23 de Setembro',
+    title: 'Primeiro lote promocional',
+    date: '27 de Abril até acabar',
     link: '',
     soldout: true
   }, {
     id: 2,
-    value: 60,
-    title: '2 Lote',
-    date: '12 de Setembro - 23 de Setembro',
+    value: 50,
+    title: 'Primeiro lote',
+    date: '27 de Abril até 31 de Maio',
     link: '',
     soldout: false
   }, {
     id: 3,
-    value: 80,
-    title: '3 Lote',
-    date: '12 de Setembro - 23 de Setembro',
+    value: 65,
+    title: 'Segundo Lote',
+    date: '01 de Junho até 30 de Junho',
     link: '',
     soldout: false
-  }],
+  },
+  {
+    id: 4,
+    value: 80,
+    title: 'Terceiro Lote',
+    date: '01 de Julho até 26 de Julho',
+    link: '',
+    soldout: false
+  }
+],
 
   sponsors: [{
     id: 1,
