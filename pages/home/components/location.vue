@@ -12,13 +12,14 @@
           <li class="flex-basis-300 flex-grow-1 margin-bottom-50">
             <div class="box-data container column">
               <span class="span-uppercase">Localização</span>
-              <span class="color-primary">SENAI, Maringá</span>
+              <span class="color-primary">Parque Internacional de Exposições Francisco Feio Ribeiro</span>
             </div>
           </li>
           <li class="flex-basis-300 flex-grow-1">
             <div class="box-data container column">
               <span class="span-uppercase">Endereço</span>
-              <span class="color-primary">R. José Corrêa de Águiar, 361 - Jardim Leblon</span>
+              <span class="color-primary">Avenida Colombo, 2186, Vila Morangueira</span>
+              <span class="color-primary">Maringá PR</span>
             </div>
           </li>
         </ul>

@@ -10,9 +10,9 @@
     </div>
 
     <div class="about--block--title col-6">
-      <p><strong>Are you into React, React Native, GraphQL and hungry to learn from the best?</strong></p>
-      <p><strong>React Day Berlin is a brand new event in the city, the first of its kind - a full day conference for engineers working with the React technology stack.</strong></p>
-      <p>Careful balance of practical and visionary talks from renowned speakers make React Day a unique place to meet and learn from the most forward-thinking international community members, influencers and open source maintainers.</p>
+      <p><strong>O DevParaná pensando em trazer relevância de conteúdo aos desenvolvedores do nosso estado organiza o segundo DevParaná Conference.</strong></p>
+      <p><strong>A conferência tem por objetivo trazer palestrantes que são referência nacional em sua área de atuação, assim como palestrantes que são destaque na comunidade através de uma chamada para submissão de palestras.</strong></p>
+      <p>No total serão 8 talks, 4 de convidados e 4 de pessoas da comunidade.</p>
     </div>
 
     <div class="rect-animation rellax" data-rellax-speed="4" data-rellax-percentage="1" style="left: -100px; bottom: 300px"></div>
