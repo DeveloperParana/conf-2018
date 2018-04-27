@@ -44,11 +44,11 @@
       <div class="shop--info flex-basis-500">
         <div class="">
           <h3>
-            <span>CAMISA</span>
+            <span>CAMISETA</span>
             <span>DEVPARANÁ</span>
             <span>2018</span>
           </h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p>As camisetas do evento serão vendidas somente ANTECIPADAMENTE e estarão disponíveis para retirada no credenciamento do evento.</p>
           <div class="container wrap align-items-end">
             <div class="">
               <ul class="container shop-check">
@@ -75,7 +75,7 @@
               </ul>
             </div>
             <div class="shop--info--value container column align-center text-align-center">
-              <span>$90</span>
+              <span>R$45</span>
               <button type="button" name="button" class="btn btn-primary">Comprar camisa</button>
             </div>
           </div>
