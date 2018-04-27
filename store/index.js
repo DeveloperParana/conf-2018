@@ -1,28 +1,22 @@
 export const state = () => ({
   speakers: [{
       id: 1,
-      name: 'Mike Grabowski',
-      image: 'mike',
-      role: 'Callstack.io, Poland',
-      description: 'Head of Open Source, React Native Core Contributor.'
+      name: 'Elder Moraes',
+      image: 'elder',
+      role: 'Oracle, São Paulo/Brasil',
+      description: 'Elder ajuda desenvolvedores server side a criar e entregar aplicações seguras, disponíveis e rápidas, para que assim possam trabalhar nos melhores projetos do mercado. Apaixonado por arquitetura de software, cloud e Java EE, ele compartilha suas experiências através de conteúdo online e eventos internacionais como JavaOne, TDC, Oracle Code e Campus Party.',
+      twitter: 'https://twitter.com/@elderjava',
+      github: 'https://github.com/eldermoraes',
+      linkedin: 'https://br.linkedin.com/in/eldermoraes'
     }, {
       id: 2,
-      name: 'Tyler Clark',
-      image: 'tyler',
-      role: 'Pluralsight, US',
-      description: 'Tyler is a Full-Stack software engineer at Pluralsight. He loves reading, writing, and teaching about emerging technologies.'
-    }, {
-      id: 3,
-      name: 'Sara Vieira',
-      image: 'sara',
-      role: 'YLDio, Portugal',
-      description: 'Front-End Developer at @YLDio, open sorcerer, maker of useless modules, Blogger, Drummer and horror movie fan girl.'
-    }, {
-      id: 4,
-      name: 'Kristin Baumann',
-      image: 'kristin',
-      role: 'HomeToGo, Germany',
-      description: 'Kristin Baumann is a Senior Frontend Developer with great interest in UI / UX design and React programming. With a degree in Computational Visualistics and after developing abroad in Australia and Vietnam she is currently working as a Product Design & Prototyping Manager at HomeToGo in Berlin. in UI / UX design and React programming. With a degree in Computational Visualistics and after developing abroad in Australia and Vietnam she is currently working as a Product Design & Prototyping Manager at HomeToGo in Berlin.'
+      name: 'Elder Moraes',
+      image: 'elder',
+      role: 'Oracle, São Paulo/Brasil',
+      description: 'Elder ajuda desenvolvedores server side a criar e entregar aplicações seguras, disponíveis e rápidas, para que assim possam trabalhar nos melhores projetos do mercado. Apaixonado por arquitetura de software, cloud e Java EE, ele compartilha suas experiências através de conteúdo online e eventos internacionais como JavaOne, TDC, Oracle Code e Campus Party.',
+      twitter: 'https://twitter.com/@elderjava',
+      github: 'https://github.com/eldermoraes',
+      linkedin: 'https://br.linkedin.com/in/eldermoraes'
     }],
 
   schedules: [{
