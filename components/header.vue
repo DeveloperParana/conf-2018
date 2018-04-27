@@ -11,7 +11,8 @@
           </div>
           <div class="box-data container column">
             <span class="span-uppercase">Localização</span>
-            <span>SENAI, Maringá</span>
+            <span>Parque Internacional de Exposições Francisco Feio Ribeiro</span>
+            <span>Maringá PR</span>
           </div>
         </div>
 
@@ -20,12 +21,12 @@
             <span>DevParaná</span>
             <span>Conference 2018</span>
           </h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+          <p>Um evento de desenvolvedores para desenvolvedores!</p>
         </div>
 
         <div class="header--block--buttons">
-          <button type="button" name="button" class="btn btn-primary margin-right-10 margin-bottom-10">Comprar tickets</button>
-          <button type="button" name="button" class="btn margin-bottom-10">Palestrantes</button>
+          <a href="/#tickets"><button type="button" name="button" class="btn btn-primary margin-right-10 margin-bottom-10">Comprar tickets</button></a>
+          <a href="/#speakers"><button type="button" name="button" class="btn margin-bottom-10">Palestrantes</button></a>
         </div>
 
         <div class="header--block--days container wrap">
