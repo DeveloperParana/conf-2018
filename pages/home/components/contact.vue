@@ -19,7 +19,7 @@
           </div>
           <div class="form-block">
             <label for="">Qual a mensagem?</label>
-            <textarea name="name" class="input" rows="4" placeholder="Digite a mensagem"></textarea>
+            <textarea name="name" class="input text-area" rows="4" placeholder="Digite a mensagem"></textarea>
           </div>
           <div class="form-block">
             <button type="button" name="button" class="btn btn-primary">Enviar mensagem</button>

@@ -13,10 +13,10 @@
         <div class="box--footer">
           <strong>Redes sociais</strong>
           <ul class="social container wrap">
-            <li><a href="https://github.com/DeveloperParana" target="_blank"><i class="fa fa-github"></i></a></li>
-            <li><a href="https://twitter.com/developerparana" target="_blank"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="https://www.facebook.com/DeveloperParana/" target="_blank"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="http://slack.devparana.org/" target="_blank"><i class="fa fa-slack"></i></a></li>
+            <li><a href="https://github.com/DeveloperParana" target="_blank"><i class="fab fa-github-alt"></i></a></li>
+            <li><a href="https://twitter.com/developerparana" target="_blank"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://www.facebook.com/DeveloperParana/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="http://slack.devparana.org/" target="_blank"><i class="fab fa-slack-hash"></i></a></li>
           </ul>
         </div>
 
@@ -30,11 +30,11 @@
 </template>
 
 <script>
-  export default {}
+export default {}
 </script>
 
 <style lang="scss" scoped>
-  .footer {
+.footer {
     padding: 100px 50px;
     background: $color-primary;
     background: url("~/assets/images/icon.svg"), $color-primary;
@@ -43,47 +43,49 @@
     background-repeat: no-repeat;
     width: 100%;
     @media screen and (max-width: 980px) {
-      background: $color-primary;
+        background: $color-primary;
     }
     .box--footer {
-      padding: 20px;
-      box-sizing: border-box;
-      strong {
-        font-size: 16px;
-      }
-      ul {
-        margin-top: 20px;
-        list-style: none;
-        li {
-          margin-bottom: 10px;
-          a {
-            color: $color-dark;
-            &:hover {
-              color: #fff;
-            }
-          }
+        padding: 20px;
+        box-sizing: border-box;
+        strong {
+            font-size: 16px;
         }
-        &.social {
-          li a {
-            width: 40px;
-            height: 40px;
-            font-size: 20px;
-            background: transparent;
-            border: 1px solid $color-dark;
-            color: $color-dark;
-            border-radius: 50%;
-            margin-right: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            transition: 0.3s;
-            &:hover {
-              background: $color-dark;
-              color: $color-primary;
-            }
-          }
-        }
-      }
+
     }
-  }
+}
+.box--footer ul {
+    margin-top: 20px;
+    list-style: none;
+    li {
+        margin-bottom: 10px;
+        a {
+            color: $color-dark;
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+
+}
+.box--footer .social {
+    li a {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        background: transparent;
+        border: 1px solid $color-dark;
+        color: $color-dark;
+        border-radius: 50%;
+        margin-right: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.3s;
+        &:hover {
+            background: $color-dark;
+            color: $color-primary;
+        }
+    }
+}
 </style>

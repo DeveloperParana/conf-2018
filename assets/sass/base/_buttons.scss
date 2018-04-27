@@ -50,6 +50,16 @@
       background: darken($color-primary, 10);
     }
   }
+  &.btn-secundary {
+    background: $color-dark;
+    color: $color-white;
+    border: 2px solid $color-primary;
+
+    &:hover {
+      background: darken($color-primary, 10);
+      border-color: darken($color-primary, 10);
+    }
+  }
 
   &.btn-outline {
     background: transparent;
@@ -68,6 +78,16 @@
       &:hover {
         color: $color-white;
         background: $color-primary;
+      }
+    }
+
+    &.btn-secundary {
+      border-color: $color-dark;
+      color: $color-dark;
+
+      &:hover {
+        color: $color-white;
+        background: $color-dark;
       }
     }
   }

@@ -2,12 +2,12 @@
   <div class="social-fixed container">
     <div class="">
       Participe:
-      <a href="http://slack.devparana.org/" target="_blank"><i class="fa fa-slack"></i></a>
+      <a href="http://slack.devparana.org/" target="_blank"><i class="fab fa-slack"></i></a>
     </div>
     <div class="">
       Compartilhe:
-      <a href="http://www.facebook.com/sharer.php?u=https://www.devparana.org/conf-2018/" target="_blank"><i class="fa fa-facebook"></i></a>
-      <a href="https://twitter.com/share?url=https://www.devparana.org/conf-2018/;text=DevParaná Conference 2018. #devpr18k" target="_blank"><i class="fa fa-twitter"></i></a>
+      <a href="http://www.facebook.com/sharer.php?u=https://www.devparana.org/conf-2018/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+      <a href="https://twitter.com/share?url=https://www.devparana.org/conf-2018/;text=DevParaná Conference 2018. #devpr18k" target="_blank"><i class="fab fa-twitter-square"></i></a>
     </div>
   </div>
 </template>
@@ -40,8 +40,8 @@
     @media (max-width: 720px) {
       display: none;
     }
-    .fa {
-      margin: 5px;
+    .fab {
+      margin: 0 5px;
     }
   }
 </style>

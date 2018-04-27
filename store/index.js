@@ -3,17 +3,17 @@ export const state = () => ({
       id: 1,
       name: 'Elder Moraes',
       image: 'elder',
-      role: 'Oracle, São Paulo/Brasil',
+      role: 'Oracle, São Paulo/SP - Brasil',
       description: 'Elder ajuda desenvolvedores server side a criar e entregar aplicações seguras, disponíveis e rápidas, para que assim possam trabalhar nos melhores projetos do mercado. Apaixonado por arquitetura de software, cloud e Java EE, ele compartilha suas experiências através de conteúdo online e eventos internacionais como JavaOne, TDC, Oracle Code e Campus Party.',
       twitter: 'https://twitter.com/@elderjava',
       github: 'https://github.com/eldermoraes',
       linkedin: 'https://br.linkedin.com/in/eldermoraes'
     }, {
       id: 2,
-      name: 'Elder Moraes',
-      image: 'elder',
-      role: 'Oracle, São Paulo/Brasil',
-      description: 'Elder ajuda desenvolvedores server side a criar e entregar aplicações seguras, disponíveis e rápidas, para que assim possam trabalhar nos melhores projetos do mercado. Apaixonado por arquitetura de software, cloud e Java EE, ele compartilha suas experiências através de conteúdo online e eventos internacionais como JavaOne, TDC, Oracle Code e Campus Party.',
+      name: 'Álvaro Justen (Turicas)',
+      image: 'turicas',
+      role: 'Oracle, Curitiba/PR - Brasil',
+      description: 'Álvaro Justen, também conhecido como Turicas, é amante de software livre, Arduinista, Pythonista e Certified Dojo Master.',
       twitter: 'https://twitter.com/@elderjava',
       github: 'https://github.com/eldermoraes',
       linkedin: 'https://br.linkedin.com/in/eldermoraes'
@@ -52,21 +52,21 @@ export const state = () => ({
   tickets: [{
     id: 1,
     value: 40,
-    title: 'Primeiro lote promocional',
+    title: '1° Lote Promocional',
     date: '27 de Abril até acabar',
     link: '',
     soldout: true
   }, {
     id: 2,
     value: 50,
-    title: 'Primeiro lote',
+    title: '1° Lote',
     date: '27 de Abril até 31 de Maio',
     link: '',
     soldout: false
   }, {
     id: 3,
     value: 65,
-    title: 'Segundo Lote',
+    title: '2° Lote',
     date: '01 de Junho até 30 de Junho',
     link: '',
     soldout: false
@@ -74,7 +74,7 @@ export const state = () => ({
   {
     id: 4,
     value: 80,
-    title: 'Terceiro Lote',
+    title: '3° Lote',
     date: '01 de Julho até 26 de Julho',
     link: '',
     soldout: false
