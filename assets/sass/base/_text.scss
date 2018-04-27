@@ -34,10 +34,9 @@ p {
 .box-data {
   margin-right: 50px;
 
-  span:last-child {
-    margin-top: 10px;
-    font-weight: 800;
-    font-size: 20px;
+  span {
+    font-size: 18px;
+    line-height: 1.5;
   }
 
   &:last-child {
@@ -72,4 +71,8 @@ h2 span {
   @media screen and (max-width: 720px) {
     font-size: 7vw;
   }
+}
+
+.font-strong {
+  font-weight: bold;
 }

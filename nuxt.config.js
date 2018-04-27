@@ -22,7 +22,6 @@ module.exports = {
   },
   css: [
     { src: '@/assets/sass/main.scss', lang: 'scss' },
-    { src: 'node_modules/@gustavoquinalha/buttons-css/assets/css/buttons-no-icons.min.css', lang: 'css' },
     { src: 'node_modules/the-grid-flexbox/css/the-grid.min.css', lang: 'css' }
   ],
   plugins: [
@@ -51,7 +50,7 @@ module.exports = {
       };
       config.module.rules.forEach((rule) => {
         if (rule.test.toString() === '/\\.vue$/') {
-          rule.options.loaders.scss[2].options.data = '@import "./assets/sass/main.scss";'
+          rule.options.loaders.scss[2].options.data = '@import "./assets/sass/base/variables.scss";@import "./assets/sass/base/colors.scss";'
         }
       })
     }

@@ -1,4 +1,16 @@
+@keyframes showRect {
+  from {
+    opacity: 0;
+  }
+  to {}
+}
+
 .rect-animation {
+  animation-name: showRect;
+  animation-duration: .5s;
+  animation-fill-mode: backwards;
+  animation-delay: 1s;
+  transition: 2s;
   width: 200px;
   height: 15px;
   background: $color-primary;
