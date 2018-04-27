@@ -13,7 +13,7 @@
       </ul>
     </div>
 
-    <button type="button" name="button" class="btn support--button">Seja um parceiro</button>
+    <a href="/pdf/mediakit.pdf"><button type="button" name="button" class="btn support--button">Seja um parceiro</button></a>
 
     <div class="rect-animation rellax" data-rellax-speed="4" data-rellax-percentage="1" style="right: 110px; bottom: 100px"></div>
     <div class="rect-animation rellax" data-rellax-speed="4" data-rellax-percentage="1" style="right: 0px;"></div>
