@@ -26,14 +26,14 @@
                 <li>
                   <a href="/#about">Sobre</a>
                 </li>
-                <li>
+                <!-- <li>
                   <a href="/#speakers">Palestrantes</a>
-                </li>
-                <li>
+                </li> -->
+                <!-- <li>
                   <a href="/#schedule">Agenda</a>
-                </li>
+                </li> -->
                 <li>
-                  <a href="/#tickets">Comprar ticket</a>
+                  <a href="/#tickets">Ingressos e mais</a>
                 </li>
                 <li>
                   <a href="/#location">Localização</a>
@@ -126,6 +126,7 @@ $size-menu: 20vh;
         min-height: $size-menu;
         .menu--content--logo {
             img {
+                display: none;
                 max-width: 100%;
             }
         }
@@ -206,6 +207,7 @@ $size-menu: 20vh;
             }
             .menu--content--logo {
                 img {
+                    display: block;
                     width: 50px;
                 }
             }
