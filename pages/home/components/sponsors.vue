@@ -1,6 +1,6 @@
 <template>
 <div class="support--block justify-content-center container column" id="sponsors">
-  <div class="size margin padding-top-100">
+  <div class="size margin">
     <h2 class="support--title flex-grow-1">Patrocinadores</h2>
 
     <ul class="support--list list-style-none">

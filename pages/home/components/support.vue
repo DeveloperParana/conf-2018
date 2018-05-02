@@ -1,7 +1,7 @@
 <template>
 <div class="support--block justify-content-center container column" id="support">
 
-  <div class="size margin padding-bottom-100">
+  <div class="size margin">
     <h2 class="support--title flex-grow-1">Apoio</h2>
 
     <ul class="support--list list-style-none">
