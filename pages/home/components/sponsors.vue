@@ -11,7 +11,7 @@
       </li>
     </ul>
     <div class="container align-center margin-top-50">
-      <a href="/pdf/mediakit.pdf" target="_blank" class="btn btn-primary btn-outline margin">Seja um parceiro</a>
+      <a href="/pdf/mediakit.pdf" target="_blank" class="btn btn-primary btn-outline margin">Seja um patrocinador</a>
     </div>
   </div>
   <div class="rect-animation rellax" data-rellax-speed="4" data-rellax-percentage="1" style="left: 0px; bottom: 200px"></div>
