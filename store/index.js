@@ -4,7 +4,7 @@ export const state = () => ({
       name: 'Elder Moraes',
       image: 'elder',
       role: 'Oracle, São Paulo/SP - Brasil',
-      description: 'Elder ajuda desenvolvedores server side a criar e entregar aplicações seguras, disponíveis e rápidas, para que assim possam trabalhar nos melhores projetos do mercado. Apaixonado por arquitetura de software, cloud e Java EE, ele compartilha suas experiências através de conteúdo online e eventos internacionais como JavaOne, TDC, Oracle Code e Campus Party.',
+      description: 'Apaixonado por arquitetura de software, cloud e Java EE, ele compartilha suas experiências através de conteúdo online e eventos internacionais como JavaOne, TDC, Oracle Code e Campus Party.',
       twitter: 'https://twitter.com/@elderjava',
       github: 'https://github.com/eldermoraes',
       linkedin: 'https://br.linkedin.com/in/eldermoraes'
@@ -12,7 +12,7 @@ export const state = () => ({
       id: 2,
       name: 'Álvaro Justen (Turicas)',
       image: 'turicas',
-      role: 'Oracle, Curitiba/PR - Brasil',
+      role: 'Curitiba/PR - Brasil',
       description: 'Álvaro Justen, também conhecido como Turicas, é amante de software livre, Arduinista, Pythonista e Certified Dojo Master.',
       twitter: 'https://twitter.com/@elderjava',
       github: 'https://github.com/eldermoraes',
@@ -52,7 +52,7 @@ export const state = () => ({
   tickets: [{
     id: 1,
     value: 40,
-    title: '1° Lote Promocional',
+    title: 'Lote Promocional',
     date: '27 de Abril até acabar',
     link: '',
     soldout: true
