@@ -8,7 +8,7 @@
     </div>
 
     <div class="about--block--title flex-basis-300 flex-grow-1">
-      <p><strong>O DevParaná pensando em trazer relevância de conteúdo aos desenvolvedores do nosso estado organiza o segundo DevParaná Conference.</strong></p>
+      <p><strong>O DevParaná pensando em trazer relevância de conteúdo aos desenvolvedores do nosso estado organiza o DevParaná Conference.</strong></p>
       <p><strong>A conferência tem por objetivo trazer palestrantes que são referência nacional em sua área de atuação, assim como palestrantes que são destaque na comunidade através de uma chamada para submissão de palestras.</strong></p>
       <p>No total serão 8 talks, 4 de convidados e 4 de pessoas da comunidade.</p>
     </div>
