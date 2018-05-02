@@ -19,9 +19,11 @@
             <div class="flex-grow-1 margin-10">
               <a href="/#tickets"><button type="button" name="button" class="btn btn-full btn-primary">Comprar tickets</button></a>
             </div>
+            <!--
             <div class="flex-grow-1 margin-10">
               <a href="/#speakers"><button type="button" name="button" class="btn btn-full btn-outline">Palestrantes</button></a>
             </div>
+            -->
           </div>
         </div>
 
