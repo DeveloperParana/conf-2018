@@ -4,16 +4,7 @@
       <menuFixed/>
       <div class="header--block size margin container column">
 
-        <div class="header--block--date container wrap">
-          <div class="box-data container column flex-basis-100">
-            <span class="span-uppercase">DATA</span>
-            <span class="font-strong">28 de julho</span>
-          </div>
-          <div class="box-data container column flex-basis-200 flex-grow-1">
-            <span class="span-uppercase">Localização</span>
-            <span class="font-strong">Parque Internacional de Exposições Francisco Feio Ribeiro - Maringá PR</span>
-          </div>
-        </div>
+
 
         <div class="header--block--intro">
           <!-- <h1>
@@ -25,12 +16,23 @@
           </div>
           <p>Um evento de desenvolvedores para desenvolvedores!</p>
           <div class="header--block--buttons container wrap">
-            <div class="flex-grow-1">
-              <a href="/#tickets"><button type="button" name="button" class="btn btn-full btn-primary margin-right-10 margin-bottom-10">Comprar tickets</button></a>
+            <div class="flex-grow-1 margin-10">
+              <a href="/#tickets"><button type="button" name="button" class="btn btn-full btn-primary">Comprar tickets</button></a>
             </div>
-            <div class="flex-grow-1">
-              <a href="/#speakers"><button type="button" name="button" class="btn btn-full btn-outline margin-bottom-10">Palestrantes</button></a>
+            <div class="flex-grow-1 margin-10">
+              <a href="/#speakers"><button type="button" name="button" class="btn btn-full btn-outline">Palestrantes</button></a>
             </div>
+          </div>
+        </div>
+
+        <div class="header--block--date container wrap">
+          <div class="box-data container column flex-basis-200 flex-grow-1">
+            <span class="span-uppercase">Localização</span>
+            <span class="font-strong">Parque Internacional de Exposições Francisco Feio Ribeiro - Maringá PR</span>
+          </div>
+          <div class="box-data container column flex-basis-100">
+            <span class="span-uppercase">DATA</span>
+            <span class="font-strong">28 de julho</span>
           </div>
         </div>
 
@@ -126,11 +128,5 @@ export default {
 .header--block--buttons {
     width: 100%;
     max-width: 500px;
-    > div {
-        margin-right: 20px;
-        &:last-child {
-            margin-right: 0;
-        }
-    }
 }
 </style>
