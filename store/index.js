@@ -54,21 +54,21 @@ export const state = () => ({
     value: 40,
     title: 'Lote Promocional',
     date: '27 de Abril até acabar',
-    link: '',
+    link: 'https://www.sympla.com.br/devparana-conference-2018__281357',
     soldout: true
   }, {
     id: 2,
     value: 50,
     title: '1° Lote',
     date: '27 de Abril até 31 de Maio',
-    link: '',
+    link: 'https://www.sympla.com.br/devparana-conference-2018__281357',
     soldout: false
   }, {
     id: 3,
     value: 65,
     title: '2° Lote',
     date: '01 de Junho até 30 de Junho',
-    link: '',
+    link: 'https://www.sympla.com.br/devparana-conference-2018__281357',
     soldout: false
   },
   {
@@ -76,7 +76,7 @@ export const state = () => ({
     value: 80,
     title: '3° Lote',
     date: '01 de Julho até 26 de Julho',
-    link: '',
+    link: 'https://www.sympla.com.br/devparana-conference-2018__281357',
     soldout: false
   }
 ],
