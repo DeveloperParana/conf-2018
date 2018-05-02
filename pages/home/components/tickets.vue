@@ -35,7 +35,7 @@
     </div>
   </div>
 
-  <div class="shop container align-items-center justify-content-between wrap">
+  <!-- <div class="shop container align-items-center justify-content-between wrap">
     <div class="shop--image flex-basis-400 flex-grow-1 container align-center">
       <img src="~/assets/images/t-shirt.jpg" width="100%" alt="Camiseta DevParaná 2018">
     </div>
@@ -79,12 +79,12 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <div class="rect-animation rellax" data-rellax-speed="4" data-rellax-percentage="1" style="left: -100px; top: 300px;"></div>
   <div class="rect-animation rellax" data-rellax-speed="4" data-rellax-percentage="1" style="right: 100px; bottom: 50%"></div>
-  <div class="rect-animation rellax" data-rellax-speed="4" data-rellax-percentage="1" style="right: 0; bottom: 100px;"></div>
-  <div class="rect-animation rellax" data-rellax-speed="4" data-rellax-percentage="1" style="left: -200px; bottom: 300px;"></div>
+  <!-- <div class="rect-animation rellax" data-rellax-speed="4" data-rellax-percentage="1" style="right: 0; bottom: 100px;"></div>
+  <div class="rect-animation rellax" data-rellax-speed="4" data-rellax-percentage="1" style="left: -200px; bottom: 300px;"></div> -->
 
 </div>
 </template>
