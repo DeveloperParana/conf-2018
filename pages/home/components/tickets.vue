@@ -3,9 +3,7 @@
 
   <div class="container justify-content-start">
     <div class="flex-basis-700 box-title text-align-center">
-      <h2>
-          Ingressos
-        </h2>
+      <h2>Ingressos</h2>
     </div>
   </div>
 
@@ -30,18 +28,18 @@
           <strong>{{ticket.title}}</strong>
         </div>
         <div class="tickets--item--content--button" v-show="!ticket.soldout">
-          <button type="button" name="button" class="btn btn-secundary">Comprar tickets</button>
+          <a :href="ticket.link" class="btn btn-secundary">Comprar tickets</a>
         </div>
       </div>
 
     </div>
   </div>
 
-  <div class="shop container align-center wrap">
-    <div class="shop--image flex-basis-400 container align-center">
+  <div class="shop container align-items-center justify-content-between wrap">
+    <div class="shop--image flex-basis-400 flex-grow-1 container align-center">
       <img src="~/assets/images/t-shirt.jpg" width="100%" alt="Camiseta DevParaná 2018">
     </div>
-    <div class="shop--info flex-basis-500">
+    <div class="shop--info flex-basis-500 flex-grow-1">
       <div class="">
         <h3>
             <span>CAMISETA</span>
@@ -49,9 +47,9 @@
             <span>2018</span>
           </h3>
         <p>As camisetas do evento serão vendidas somente <b>ANTECIPADAMENTE</b> e estarão disponíveis para retirada no credenciamento do evento.</p>
-        <div class="container wrap align-items-end">
-          <div class="full-width container align-center">
-            <ul class="container shop-check margin-top-20">
+        <div class="container wrap ">
+          <div class="container wrap align-items-end">
+            <ul class="container shop-check">
               <li>
                 <input type="radio" id="s" name="size" checked="checked" value="small" v-model="tshirtSize">
                 <label for="s">S</label>
@@ -74,9 +72,9 @@
               </li>
             </ul>
           </div>
-          <div class="shop--info--value container column align-center text-align-center full-width">
+          <div class="shop--info--value container column container align-center">
             <span>R$45</span>
-            <button type="button" name="button" class="btn btn-full btn-primary margin-top-20">Comprar camisa</button>
+            <button type="button" name="button" class="btn btn-full btn-primary">Comprar camisa</button>
           </div>
         </div>
       </div>
@@ -135,9 +133,17 @@ export default {
 .shop {
     margin-top: 100px;
     .shop--image {
-        border: 2px solid $color-primary;
-        border-radius: 10px;
-        overflow: hidden;
+      border: 2px solid $color-primary;
+      overflow: hidden;
+      box-shadow: -50px 50px 0 0 $color-primary;
+      height: 500px;
+      img {
+        object-fit: cover;
+        transition: .3s;
+          &:hover {
+            transform: scale(2.5);
+          }
+      }
     }
 
 }
@@ -171,9 +177,10 @@ export default {
     }
     .shop--info--value {
         font-size: 5rem;
+        line-height: 1;
         font-weight: bold;
         color: $color-primary;
-        margin-top: 20px;
+        // margin-top: 20px;
     }
 }
 
