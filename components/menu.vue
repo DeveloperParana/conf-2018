@@ -21,25 +21,25 @@
             <nav>
               <ul class="container wrap">
                 <li>
-                  <router-link :to="{ name: 'home', params: {} }" class="active">Página inicial</router-link>
+                  <router-link to="#home">Página inicial</router-link>
                 </li>
                 <li>
-                  <a href="/#about">Sobre</a>
+                  <router-link to="#about">Sobre</router-link>
                 </li>
                 <!-- <li>
-                  <a href="/#speakers">Palestrantes</a>
+                  <router-link to="#speakers">Palestrantes</router-link>
                 </li> -->
                 <!-- <li>
-                  <a href="/#schedule">Agenda</a>
+                <router-link to="#schedule">Agenda</router-link>
+                </li> -->
+                <!-- <li>
+                <router-link to="#tickets">Ingressos e mais</router-link>
                 </li> -->
                 <li>
-                  <a href="/#tickets">Ingressos e mais</a>
+                  <router-link to="#location">Localização</router-link>
                 </li>
                 <li>
-                  <a href="/#location">Localização</a>
-                </li>
-                <li>
-                  <a href="/#contact">Contato</a>
+                  <router-link to="#contact">Contato</router-link>
                 </li>
               </ul>
             </nav>

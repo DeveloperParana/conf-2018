@@ -1,5 +1,5 @@
 <template lang="html">
-  <header class="bg-header">
+  <header class="bg-header" id="home">
     <div class="header">
       <menuFixed/>
       <div class="header--block size margin container column">
