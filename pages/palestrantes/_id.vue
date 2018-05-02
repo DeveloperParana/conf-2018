@@ -1,21 +1,60 @@
 <template lang="html">
-  <div class="size margin container column align-center">
-    speaker: {{speakers}}
-    <nuxt-link :to="{ name: 'home' }" class="btn">Voltar</nuxt-link>
+  <div class="">
+
+    <div class="relative container wrap">
+      <div class="rotate--box-title">
+        <div class="box-title">
+          <h2>Palestrantes</h2>
+        </div>
+      </div>
+
+      <div class="flex-basis-500 flex-grow-1 speakers container wrap align-center">
+        <div class="speakers--item col-lg-6 col-12" v-for="speaker in speakers" :key="speaker.id" :class="{ active : speakerSelected === speaker.id }">
+          <div class="speakers--item--content" @click="speakerSelected = speaker.id" v-on:mouseover="speakerSelected = speaker.id">
+            <div class="speakers--item--content--image">
+              <img :src="require('@/assets/images/speakers/' + speaker.image + '.jpg')" width="100%">
+              <div class="speakers--item--content--description">
+                <p>{{speaker.description}}</p>
+                <ul class="social container align-items-center">
+                  <li><a href="#" target="_blank"><i class="fa fa-link"></i></a></li>
+                  <li><a href="#" target="_blank"><i class="fab fa-github"></i></a></li>
+                  <li><a href="#" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                  <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="speakers--item--content--title">
+              <p><strong>{{speaker.name}}</strong></p>
+              <p>{{speaker.role}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<div class="padding-bottom-100 padding-top-50 size margin container align-center">
+  <nuxt-link :to="{ name: 'home' }" class="btn btn-primary"><i class="fas fa-arrow-left margin-right-10"></i> Voltar</nuxt-link>
+</div>
+
   </div>
 </template>
 
 <script>
-  import {
-    mapState
-  }
-  from 'vuex'
+import {
+  mapState
+}
+from 'vuex'
 
-  export default {
-    computed: {
-      ...mapState(['speakers'])
+export default {
+  data() {
+    return {
+      speakerSelected: 0
     }
+  },
+  computed: {
+    ...mapState(['speakers'])
   }
+}
 </script>
 
 <style lang="css">
