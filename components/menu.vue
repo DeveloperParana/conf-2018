@@ -5,7 +5,7 @@
         <div class="menu--content size margin container align-center">
 
           <div class="menu--content--logo flex-grow-1">
-            <router-link :to="{ name: 'home', params: {} }">
+            <router-link to="#home">
               <img src="../assets/images/logo.svg" width="100" alt="Logo devparaná">
             </router-link>
           </div>
