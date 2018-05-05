@@ -1,5 +1,5 @@
 <template lang="html">
-  <div class="content size margin" id="contact">
+  <div class="content size margin" id="contact" v-on:click="getToken">
 
     <div class="container wrap-reverse contact align-center">
 
@@ -7,22 +7,22 @@
         <div class="container--form-block">
           <div class="form-block">
             <label for="">Seu nome</label>
-            <input type="text" name="" value="" class="input" placeholder="Digite seu nome">
+            <input type="text" name="" value="" class="input" v-model="contact.name" v-on:click="getToken" placeholder="Digite seu nome">
           </div>
           <div class="form-block">
             <label for="">Seu e-mail</label>
-            <input type="text" name="" value="" class="input" placeholder="Digite seu e-mail">
+            <input type="text" name="" value="" class="input" v-model="contact.email" placeholder="Digite seu e-mail">
           </div>
           <div class="form-block">
             <label for="">Qual o assunto?</label>
-            <input type="text" name="" value="" class="input" placeholder="Digite o assunto">
+            <input type="text" name="" value="" class="input" v-model="contact.subject" placeholder="Digite o assunto">
           </div>
           <div class="form-block">
             <label for="">Qual a mensagem?</label>
-            <textarea name="name" class="input text-area" rows="4" placeholder="Digite a mensagem"></textarea>
+            <textarea name="name" class="input text-area" rows="4" v-model="contact.message" placeholder="Digite a mensagem"></textarea>
           </div>
           <div class="form-block">
-            <button type="button" name="button" class="btn btn-primary">Enviar mensagem</button>
+            <button type="button" name="button" class="btn btn-primary" v-on:click="send">Enviar mensagem</button>
           </div>
         </div>
       </div>
@@ -49,7 +49,52 @@
 </template>
 
 <script>
-  export default {}
+  export default {
+    data() {
+      return {
+        contact: {
+          token: null,
+          email: null,
+          message: null,
+          name: null,
+          subject: null
+        }
+      }
+    },
+    methods: {
+      getToken() {
+        console.log('getToken', this.$data.contact.token)
+        if (this.$data.contact.token === null) {
+          fetch('https://wn3smey42d.execute-api.us-east-1.amazonaws.com/production/createToken', {
+            method: 'POST'
+          }).then((data) => {
+            data.json().then((body) => {
+              this.$data.contact.token = body.token
+            })
+          }).catch((err) => {
+            console.error(err)
+          })
+        }
+      },
+      send() {
+        if (!Object.values(this.$data.contact).includes(null)) {
+          fetch('https://wn3smey42d.execute-api.us-east-1.amazonaws.com/production/sendEmail', {
+            method: 'POST',
+            body: JSON.stringify(this.$data.contact)
+          }).then((data) => {
+            data.json().then((body) => {
+              console.log(body)
+              if (body.status === 'ok') {
+                alert('mensagem enviada com sucesso')
+              }
+            })
+          }).catch((err) => {
+            console.error(err)
+          })
+        }
+      }
+    }
+  }
 </script>
 
 <style lang="scss" scoped>
