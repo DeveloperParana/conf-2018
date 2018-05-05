@@ -17,7 +17,8 @@ module.exports = {
       { rel: 'stylesheet', href: 'https://use.fontawesome.com/releases/v5.0.10/css/all.css'}
     ],
     script: [
-      { src: 'https://cdnjs.cloudflare.com/ajax/libs/rellax/1.5.1/rellax.min.js' }
+      { src: 'https://cdnjs.cloudflare.com/ajax/libs/rellax/1.5.1/rellax.min.js' },
+      { src: 'https://stc.pagseguro.uol.com.br/pagseguro/api/v2/checkout/pagseguro.lightbox.js' }
     ],
   },
   css: [

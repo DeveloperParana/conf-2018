@@ -35,9 +35,9 @@
     </div>
   </div>
 
-  <!-- <div class="shop container align-items-center justify-content-between wrap">
+  <div class="shop container align-items-center justify-content-between wrap">
     <div class="shop--image flex-basis-400 flex-grow-1 container align-center">
-      <img src="~/assets/images/t-shirt.jpg" width="100%" alt="Camiseta DevParaná 2018">
+      <img src="~/assets/images/t-shirt-blue.jpg" width="100%" alt="Camiseta DevParaná 2018">
     </div>
     <div class="shop--info flex-basis-500 flex-grow-1">
       <div class="">
@@ -51,35 +51,39 @@
           <div class="container wrap align-items-end">
             <ul class="container shop-check">
               <li>
-                <input type="radio" id="s" name="size" checked="checked" value="small" v-model="tshirtSize">
+                <input type="radio" id="s" name="size" checked="checked" value="E2CA19CAB0B0E5DAA4C0FF9139FBD73C" v-model="tshirtSize">
                 <label for="s">S</label>
               </li>
               <li>
-                <input type="radio" id="m" name="size" value="medium" v-model="tshirtSize">
+                <input type="radio" id="m" name="size" value="316828DC22229F6DD4DAFFADCB940D26" v-model="tshirtSize">
                 <label for="m">M</label>
               </li>
               <li>
-                <input type="radio" id="l" name="size" value="large" v-model="tshirtSize">
+                <input type="radio" id="l" name="size" value="6C0760762727348CC4D39F8A7A077AB6" v-model="tshirtSize">
                 <label for="l">L</label>
               </li>
               <li>
-                <input type="radio" id="xl" name="size" value="xlarge" v-model="tshirtSize">
+                <input type="radio" id="xl" name="size" value="9B680C0DDCDC17FAA49B8F9CF9D20CAD" v-model="tshirtSize">
                 <label for="xl">XL</label>
               </li>
               <li>
-                <input type="radio" id="xxl" name="size" value="xxlarge" v-model="tshirtSize">
+                <input type="radio" id="xxl" name="size" value="BCCAC3D587876EFFF459AF912FC8390F" v-model="tshirtSize">
                 <label for="xxl">XXL</label>
               </li>
             </ul>
           </div>
           <div class="shop--info--value container column container align-center">
             <span>R$45</span>
-            <button type="button" name="button" class="btn btn-full btn-primary">Comprar camisa</button>
+            <button type="button" name="button" class="btn btn-full btn-primary" @click="tshirtSelectionValidation()">Comprar camisa</button>
           </div>
         </div>
       </div>
     </div>
-  </div> -->
+  </div>
+  <form id="form-camiseta">
+    <input type="hidden" name="iot" value="button" />
+    <input type="hidden" name="code" :value="tshirtSize" />
+  </form>
 
   <div class="rect-animation rellax" data-rellax-speed="4" data-rellax-percentage="1" style="left: -100px; top: 300px;"></div>
   <div class="rect-animation rellax" data-rellax-speed="4" data-rellax-percentage="1" style="right: 100px; bottom: 50%"></div>
@@ -99,11 +103,16 @@ export default {
   data() {
     return {
       currentticket: 2,
-      tshirtSize: 'large',
+      tshirtSize: '6C0760762727348CC4D39F8A7A077AB6',
     }
   },
   computed: {
     ...mapState(['tickets'])
+  },
+  methods: {
+    tshirtSelectionValidation() {
+      PagSeguroLightbox(document.querySelector('#form-camiseta'))
+    }
   }
 }
 </script>
@@ -141,7 +150,7 @@ export default {
         object-fit: cover;
         transition: .3s;
           &:hover {
-            transform: scale(2.5);
+            transform: scale(1.5);
           }
       }
     }
