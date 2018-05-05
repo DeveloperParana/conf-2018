@@ -67,10 +67,10 @@
         if (this.$data.contact.token === null) {
           fetch('https://wn3smey42d.execute-api.us-east-1.amazonaws.com/production/createToken', {
             method: 'POST'
-          }).then((data) => {
-            data.json().then((body) => {
-              this.$data.contact.token = body.token
-            })
+          })
+          .then((data) => data.json())
+          .then((body) => {
+            this.$data.contact.token = body.token
           }).catch((err) => {
             console.error(err)
           })
@@ -81,14 +81,15 @@
           fetch('https://wn3smey42d.execute-api.us-east-1.amazonaws.com/production/sendEmail', {
             method: 'POST',
             body: JSON.stringify(this.$data.contact)
-          }).then((data) => {
-            data.json().then((body) => {
-              console.log(body)
-              if (body.status === 'ok') {
-                alert('mensagem enviada com sucesso')
-              }
-            })
-          }).catch((err) => {
+          })
+          .then((data) => data.json())
+          .then((body) => {
+            console.log(body)
+            if (body.status === 'ok') {
+              alert('mensagem enviada com sucesso')
+            }
+          })
+          .catch((err) => {
             console.error(err)
           })
         }
@@ -98,32 +99,32 @@
 </script>
 
 <style lang="scss" scoped>
-  .contact {
-    p {
-      opacity: .7;
+.contact {
+  p {
+    opacity: 0.7;
+  }
+  .container--form-block {
+    padding: 50px;
+    box-sizing: border-box;
+  }
+  .contact--text {
+    background: url("~/assets/images/contact.jpg");
+    background-position: center right;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    padding: 0 50px;
+    box-sizing: border-box;
+    > div {
+      transform: translateY(-100px);
     }
-    .container--form-block {
-      padding: 50px;
-      box-sizing: border-box;
-    }
+  }
+  @media (max-width: 720px) {
     .contact--text {
-      background: url("~/assets/images/contact.jpg");
-      background-position: center right;
-      background-size: 90%;
-      background-repeat: no-repeat;
-      padding: 0 50px;
-      box-sizing: border-box;
+      background: none;
       > div {
-        transform: translateY(-100px);
-      }
-    }
-    @media (max-width: 720px) {
-      .contact--text {
-        background: none;
-        > div {
-          transform: translateY(0);
-        }
+        transform: translateY(0);
       }
     }
   }
+}
 </style>
