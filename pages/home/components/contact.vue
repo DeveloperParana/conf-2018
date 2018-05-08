@@ -106,7 +106,6 @@ export default {
 
   methods: {
     getToken() {
-      console.log("getToken", this.$data.contact.token);
       if (this.$data.contact.token === null) {
         fetch(
           "https://wn3smey42d.execute-api.us-east-1.amazonaws.com/production/createToken",
@@ -135,10 +134,8 @@ export default {
         )
           .then(data => data.json())
           .then(body => {
-            console.log(body);
             if (body.status === "ok") {
               this.success = true;
-              alert("mensagem enviada com sucesso");
             }
           })
           .catch(err => {
