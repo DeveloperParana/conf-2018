@@ -1,0 +1,30 @@
+@keyframes showRect {
+  from {
+    opacity: 0;
+  }
+  to {}
+}
+
+.rect-animation {
+  animation-name: showRect;
+  animation-duration: .5s;
+  animation-fill-mode: backwards;
+  animation-delay: 1s;
+  transition: .5s;
+  width: 200px;
+  height: 15px;
+  background: $color-primary;
+  position: absolute;
+  z-index: 9;
+  @media (max-width: 480px) {
+    display: none;
+  }
+
+  &.light {
+    background: $color-white;
+  }
+
+  &.dark {
+    background: $color-dark;
+  }
+}

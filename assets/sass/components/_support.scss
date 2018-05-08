@@ -1,0 +1,27 @@
+.support--block {
+  @extend .background-third;
+  padding: 50px 0;
+  position: relative;
+}
+
+.support--title {
+  color: $color-dark;
+  font-size: 40px;
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 60px;
+}
+
+.support--list {
+  display: flex;
+  // justify-content: space-between;
+  overflow-x: auto;
+}
+
+.support--item {
+  padding: 20px;
+}
+
+.support--image {
+  max-width: 130px;
+}

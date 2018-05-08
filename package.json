@@ -1,0 +1,47 @@
+{
+  "name": "conf-2018",
+  "version": "1.0.0",
+  "description": "Dev Paraná Conference 2018",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start-nuxt": "nuxt start",
+    "start": "node server.js",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint",
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup",
+    "heroku": "npm run build && npm run generate",
+    "postinstall": "if [ $BUILD ]; then npm run heroku; fi"
+  },
+  "engines": {
+    "node": "8.x"
+  },
+  "main": "index.js",
+  "author": "Leonardo Elias <leonardo.elias4@gmail.com>",
+  "contributors": [
+    {
+      "name": "Gustavo Quinalha",
+      "email": "gusquinalha@gmail.com"
+    }
+  ],
+  "dependencies": {
+    "alerts-css": "^1.0.2",
+    "express": "^4.16.3",
+    "nuxt": "^1.0.0",
+    "push-dir": "^0.4.1",
+    "vee-validate": "^2.0.9"
+  },
+  "devDependencies": {
+    "@gustavoquinalha/buttons-css": "^1.0.1",
+    "babel-eslint": "^8.2.1",
+    "eslint": "^4.15.0",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^1.7.1",
+    "eslint-plugin-vue": "^4.2.2",
+    "node-sass": "^4.7.2",
+    "sass-loader": "^6.0.6",
+    "the-grid-flexbox": "^2.0.1"
+  }
+}

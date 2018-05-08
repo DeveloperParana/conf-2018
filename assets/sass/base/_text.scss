@@ -1,0 +1,78 @@
+h1,
+h2 {
+  font-size: 5rem;
+}
+
+h3 {
+  font-size: 4rem;
+}
+
+h4 {
+  font-size: 3rem;
+}
+
+h5 {
+  font-size: 2rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.7em;
+  font-weight: 300;
+}
+
+.span-uppercase {
+  font-size: 18px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.box-data {
+  margin-right: 50px;
+
+  span {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @media (max-width: 720px) {
+    margin-right: 20px;
+  }
+}
+
+.box-title {
+  text-transform: uppercase;
+  margin-bottom: 100px;
+
+  h2 span {
+    display: block;
+  }
+  @media (max-width: 720px) {
+    h2 {
+      font-size: 10vw;
+    }
+  }
+}
+
+.list-style-none {
+  list-style: none;
+}
+
+h2 span {
+  display: block;
+  @media screen and (max-width: 720px) {
+    font-size: 7vw;
+  }
+}
+
+.font-strong {
+  font-weight: bold;
+}
