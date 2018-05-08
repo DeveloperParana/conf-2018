@@ -53,14 +53,14 @@ export const state = () => ({
     id: 1,
     value: 40,
     title: 'Lote Promocional',
-    date: '27 de Abril até acabar',
+    date: '05 de Maio até acabar',
     link: 'https://www.sympla.com.br/devparana-conference-2018__281357',
-    soldout: true
+    soldout: false
   }, {
     id: 2,
     value: 50,
     title: '1° Lote',
-    date: '27 de Abril até 31 de Maio',
+    date: '05 de Maio até 31 de Maio',
     link: 'https://www.sympla.com.br/devparana-conference-2018__281357',
     soldout: false
   }, {
