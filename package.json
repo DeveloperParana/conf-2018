@@ -27,6 +27,7 @@
     }
   ],
   "dependencies": {
+    "@xkeshi/vue-countdown": "^0.6.0",
     "alerts-css": "^1.0.2",
     "express": "^4.16.3",
     "nuxt": "^1.0.0",
