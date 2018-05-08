@@ -1,30 +1,66 @@
 <template lang="html">
-  <div class="content size margin" id="contact" v-on:click="getToken">
+  <div class="content size margin" id="contact">
 
     <div class="container wrap-reverse contact align-center">
 
       <div class="flex-basis-400 flex-grow-1">
-        <div class="container--form-block">
+        <form class="container--form-block">
           <div class="form-block">
             <label for="">Seu nome</label>
-            <input type="text" name="" value="" class="input" v-model="contact.name" v-on:click="getToken" placeholder="Digite seu nome">
+            <input type="text" name="name" value="" class="input" v-model="contact.name" placeholder="Digite seu nome" v-validate="'required'">
+            <span v-show="errors.has('name')">{{ errors.first('name') }}</span>
           </div>
           <div class="form-block">
             <label for="">Seu e-mail</label>
-            <input type="text" name="" value="" class="input" v-model="contact.email" placeholder="Digite seu e-mail">
+            <input type="text" name="email" value="" class="input" v-model="contact.email" placeholder="Digite seu e-mail" v-validate="'required|email'">
+            <span v-show="errors.has('email')">{{ errors.first('email') }}</span>
           </div>
           <div class="form-block">
             <label for="">Qual o assunto?</label>
-            <input type="text" name="" value="" class="input" v-model="contact.subject" placeholder="Digite o assunto">
+            <input type="text" name="subject" value="" class="input" v-model="contact.subject" placeholder="Digite o assunto" v-validate="'required'">
+            <span v-show="errors.has('subject')">{{ errors.first('subject') }}</span>
           </div>
           <div class="form-block">
             <label for="">Qual a mensagem?</label>
-            <textarea name="name" class="input text-area" rows="4" v-model="contact.message" placeholder="Digite a mensagem"></textarea>
+            <textarea name="msg" class="input text-area" rows="4" v-model="contact.message" placeholder="Digite a mensagem" v-validate="'required'"></textarea>
+            <span v-show="errors.has('msg')">{{ errors.first('msg') }}</span>
           </div>
+
+          <div class="form-block">
+            <transition name="fade">
+              <div class="container-alert" v-show="success">
+                <div class="alert alert_success">
+                  <div class="alert--icon">
+                    <i class="fas fa-check-circle"></i>
+                  </div>
+                  <div class="alert--content">
+                    Mensagem enviada com sucesso!
+                  </div>
+                  <div class="alert--close" @click="success = false">
+                    <i class="far fa-times-circle"></i>
+                  </div>
+                </div>
+              </div>
+            </transition>
+            <transition name="fade">
+            <div class="alert alert_danger" v-show="error">
+              <div class="alert--icon">
+                <i class="fas fa-times-circle"></i>
+              </div>
+              <div class="alert--content">
+                Ocorreu algum erro, tente novamente!
+              </div>
+              <div class="alert--close">
+                <i class="far fa-times-circle"></i>
+              </div>
+            </div>
+          </transition>
+          </div>
+
           <div class="form-block">
             <button type="button" name="button" class="btn btn-primary" v-on:click="send">Enviar mensagem</button>
           </div>
-        </div>
+        </form>
       </div>
 
       <div class="contact--text flex-basis-400 flex-grow-2 container align-center">
@@ -49,53 +85,74 @@
 </template>
 
 <script>
-  export default {
-    data() {
-      return {
-        contact: {
-          token: null,
-          email: null,
-          message: null,
-          name: null,
-          subject: null
-        }
+import Vue from "vue";
+import VeeValidate from "vee-validate";
+
+Vue.use(VeeValidate);
+export default {
+  data() {
+    return {
+      contact: {
+        token: null,
+        email: null,
+        message: null,
+        name: null,
+        subject: null
+      },
+      success: false,
+      error: false
+    };
+  },
+
+  methods: {
+    getToken() {
+      console.log("getToken", this.$data.contact.token);
+      if (this.$data.contact.token === null) {
+        fetch(
+          "https://wn3smey42d.execute-api.us-east-1.amazonaws.com/production/createToken",
+          {
+            method: "POST"
+          }
+        )
+          .then(data => data.json())
+          .then(body => {
+            this.$data.contact.token = body.token;
+          })
+          .catch(err => {
+            console.error(err);
+          });
       }
     },
-    methods: {
-      getToken() {
-        console.log('getToken', this.$data.contact.token)
-        if (this.$data.contact.token === null) {
-          fetch('https://wn3smey42d.execute-api.us-east-1.amazonaws.com/production/createToken', {
-            method: 'POST'
-          })
-          .then((data) => data.json())
-          .then((body) => {
-            this.$data.contact.token = body.token
-          }).catch((err) => {
-            console.error(err)
-          })
-        }
-      },
-      send() {
-        if (!Object.values(this.$data.contact).includes(null)) {
-          fetch('https://wn3smey42d.execute-api.us-east-1.amazonaws.com/production/sendEmail', {
-            method: 'POST',
+    send() {
+      this.getToken();
+      if (!Object.values(this.$data.contact).includes(null)) {
+        fetch(
+          "https://wn3smey42d.execute-api.us-east-1.amazonaws.com/production/sendEmail",
+          {
+            method: "POST",
             body: JSON.stringify(this.$data.contact)
-          })
-          .then((data) => data.json())
-          .then((body) => {
-            console.log(body)
-            if (body.status === 'ok') {
-              alert('mensagem enviada com sucesso')
+          }
+        )
+          .then(data => data.json())
+          .then(body => {
+            console.log(body);
+            if (body.status === "ok") {
+              this.success = true;
+              alert("mensagem enviada com sucesso");
             }
           })
-          .catch((err) => {
-            console.error(err)
-          })
-        }
+          .catch(err => {
+            this.success = false;
+            this.error = true;
+            console.error(err);
+          });
       }
     }
+  },
+  mounted() {
+    this.getToken();
   }
+};
 </script>
 
 <style lang="scss" scoped>

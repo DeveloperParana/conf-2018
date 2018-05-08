@@ -27,9 +27,11 @@
     }
   ],
   "dependencies": {
+    "alerts-css": "^1.0.2",
     "express": "^4.16.3",
     "nuxt": "^1.0.0",
-    "push-dir": "^0.4.1"
+    "push-dir": "^0.4.1",
+    "vee-validate": "^2.0.9"
   },
   "devDependencies": {
     "@gustavoquinalha/buttons-css": "^1.0.1",
