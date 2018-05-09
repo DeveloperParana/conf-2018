@@ -43,7 +43,8 @@ module.exports = {
   ],
   plugins: [
     { src: "~plugins/smooth-scroll.js", ssr: false },
-    { src: "~plugins/ga.js", ssr: false }
+    { src: "~plugins/ga.js", ssr: false },
+    { src: "~plugins/vue-countdown.js", ssr: false }
   ],
   /*
   ** Customize the progress bar color

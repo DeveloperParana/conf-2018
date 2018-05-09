@@ -32,9 +32,9 @@
                 <!-- <li>
                 <router-link to="#schedule">Agenda</router-link>
                 </li> -->
-                <!-- <li>
-                <router-link to="#tickets">Ingressos e mais</router-link>
-                </li> -->
+                <li>
+                  <router-link to="#tickets">Ingressos e mais</router-link>
+                </li>
                 <li>
                   <router-link to="#location">Localização</router-link>
                 </li>
