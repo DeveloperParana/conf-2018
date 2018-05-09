@@ -18,7 +18,7 @@
         </div>
         <div class="tickets--item--content--info flex-grow-1 container column align-center">
           <div class="value">
-            {{ '$' + ticket.value}}
+            {{ 'R$' + ticket.value}}
           </div>
           <div class="date">
             {{ticket.date}}
