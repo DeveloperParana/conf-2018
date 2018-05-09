@@ -10,7 +10,7 @@
           <p>Um evento de desenvolvedores para desenvolvedores!</p>
           <div class="header--block--buttons container wrap">
             <div class="flex-grow-1 margin-10">
-              <a href="/#tickets"><button type="button" name="button" class="btn btn-full btn-primary">Comprar tickets</button></a>
+              <router-link to="#tickets"><button type="button" name="button" class="btn btn-full btn-primary">Comprar tickets</button></router-link>
             </div>
           </div>
         </div>
