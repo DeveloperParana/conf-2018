@@ -2,15 +2,16 @@
   from {
     opacity: 0;
   }
+
   to {}
 }
 
 .rect-animation {
   animation-name: showRect;
-  animation-duration: .5s;
+  animation-duration: 0.5s;
   animation-fill-mode: backwards;
   animation-delay: 1s;
-  transition: .5s;
+  transition: 0.5s;
   width: 200px;
   height: 15px;
   background: $color-primary;
@@ -27,4 +28,17 @@
   &.dark {
     background: $color-dark;
   }
+}
+
+.fade-bottom-enter-active {
+  transition:.3s;
+}
+
+.fade-bottom-leave-active {
+  transition: .3s
+}
+.fade-bottom-enter,
+.fade-bottom-leave-to {
+  transform: translateY(100px);
+  opacity: 0;
 }
