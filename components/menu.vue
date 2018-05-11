@@ -100,7 +100,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$size-menu: 20vh;
+$size-menu: 15vh;
 .fa {
     font-size: 22px;
     cursor: pointer;
@@ -198,7 +198,7 @@ $size-menu: 20vh;
         animation: showMenu 0.5s backwards;
         z-index: 11;
         background: $color-dark;
-        box-shadow: 0 2px 20px 0 darken($color-dark, 10);
+        box-shadow: 0 2px 20px 0 rgba(0,0,0,.2);
 
         .menu--content {
             min-height: 80px;
