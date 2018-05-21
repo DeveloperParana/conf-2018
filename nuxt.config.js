@@ -75,7 +75,7 @@ module.exports = {
     }
   },
   modules: [
-    'nuxt-facebook-pixel-module',
+    'nuxt-facebook-pixel-module'
   ],
   facebook: {
     track: 'PageView',
