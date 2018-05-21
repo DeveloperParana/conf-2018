@@ -73,5 +73,12 @@ module.exports = {
         }
       });
     }
+  },
+  modules: [
+    'nuxt-facebook-pixel-module',
+  ],
+  facebook: {
+    track: 'PageView',
+    pixelId: '244754419595080'
   }
 };
