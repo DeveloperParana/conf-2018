@@ -1,7 +1,7 @@
 <template lang="html">
   <div>
     <about />
-    <!-- <speakers /> -->
+    <speakers />
     <!-- <buytickets /> -->
     <!-- <call4papers /> -->
     <!-- <schedule /> -->
@@ -20,7 +20,7 @@ import about from "@/pages/home/components/about";
 // import schedule from "@/pages/home/components/schedule";
 // import buytickets from "@/components/buytickets";
 // import call4papers from "@/pages/home/components/call4papers";
-// import speakers from "@/pages/home/components/speakers";
+import speakers from "@/pages/home/components/speakers";
 import tickets from "@/pages/home/components/tickets";
 import location from "@/pages/home/components/location";
 import contact from "@/pages/home/components/contact";
@@ -33,7 +33,7 @@ export default {
     // call4papers,
     // schedule,
     // buytickets,
-    // speakers,
+    speakers,
     tickets,
     location,
     contact,
