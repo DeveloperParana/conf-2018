@@ -6,7 +6,7 @@
 
     <ul class="support--list list-style-none">
       <li class="support--item" v-for="supporter in support" :key="supporter.id">
-        <a href="">
+        <a v-bind:href="supporter.address">
             <img class="support--image" :src="require('@/assets/images/support/' + supporter.image + '.png')" alt="">
           </a>
       </li>
