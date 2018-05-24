@@ -16,10 +16,11 @@
             <div class="speakers--item--content--description">
               <p>{{speaker.description}}</p>
               <ul class="social container align-items-center">
-                <li><a href="#" target="_blank"><i class="fa fa-link"></i></a></li>
-                <li><a href="#" target="_blank"><i class="fab fa-github"></i></a></li>
-                <li><a href="#" target="_blank"><i class="fab fa-facebook"></i></a></li>
-                <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li v-if="speaker.linkedin"><a v-bind:href="speaker.linkedin" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                <li v-if="speaker.github"><a v-bind:href="speaker.github" target="_blank"><i class="fab fa-github"></i></a></li>
+                <li v-if="speaker.facebook"><a v-bind:href="speaker.facebook" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                <li v-if="speaker.instagram"><a v-bind:href="speaker.instagram" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li v-if="speaker.twitter"><a v-bind:href="speaker.twitter" target="_blank"><i class="fab fa-twitter"></i></a></li>
               </ul>
             </div>
           </div>

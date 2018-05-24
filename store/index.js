@@ -1,24 +1,22 @@
 export const state = () => ({
   speakers: [{
-      id: 1,
-      name: 'Elder Moraes',
-      image: 'elder',
-      role: 'Oracle, São Paulo/SP - Brasil',
-      description: 'Apaixonado por arquitetura de software, cloud e Java EE, ele compartilha suas experiências através de conteúdo online e eventos internacionais como JavaOne, TDC, Oracle Code e Campus Party.',
-      twitter: 'https://twitter.com/@elderjava',
-      github: 'https://github.com/eldermoraes',
-      linkedin: 'https://br.linkedin.com/in/eldermoraes'
-    }, {
-      id: 2,
-      name: 'Álvaro Justen (Turicas)',
-      image: 'turicas',
-      role: 'Curitiba/PR - Brasil',
-      description: 'Álvaro Justen, também conhecido como Turicas, é amante de software livre, Arduinista, Pythonista e Certified Dojo Master.',
-      twitter: 'https://twitter.com/@elderjava',
-      github: 'https://github.com/eldermoraes',
-      linkedin: 'https://br.linkedin.com/in/eldermoraes'
-    }],
-
+    id: 1,
+    name: 'Elder Moraes',
+    image: 'elder',
+    role: 'Oracle, São Paulo/SP - Brasil',
+    description: 'Apaixonado por arquitetura de software, cloud e Java EE, ele compartilha suas experiências através de conteúdo online e eventos internacionais como JavaOne, TDC, Oracle Code e Campus Party.',
+    twitter: 'https://twitter.com/@elderjava',
+    github: 'https://github.com/eldermoraes',
+    linkedin: 'https://br.linkedin.com/in/eldermoraes'
+  }, {
+    id: 2,
+    name: 'Turicas (aka Álvaro Justen)',
+    image: 'turicas',
+    role: 'Curitiba/PR - Brasil',
+    description: 'Turicas (aka Álvaro Justen) é programador, professor, hipnotista e dependente químico de cafés especiais.',
+    twitter: 'https://twitter.com/turicas',
+    github: 'https://github.com/turicas'
+  }],
   schedules: [{
     id: 1,
     time: '8:30',
@@ -49,38 +47,38 @@ export const state = () => ({
     description: 'Redux is a strict framework. Whether you view that as a pro or a con, handling async actions can sometimes be a pain. Especially if you are using middleware such as Redux Thunk and have to chain promises. an application grows, its difficult to maintain and continuously test these actions'
   }],
 
-  tickets: [{
-    id: 1,
-    value: 40,
-    title: 'Lote Promocional',
-    date: '05 de Maio até acabar',
-    link: 'https://www.sympla.com.br/devparana-conference-2018__281357',
-    soldout: true
-  }, {
-    id: 2,
-    value: 50,
-    title: '1° Lote',
-    date: '05 de Maio até 31 de Maio',
-    link: 'https://www.sympla.com.br/devparana-conference-2018__281357',
-    soldout: false
-  }, {
-    id: 3,
-    value: 65,
-    title: '2° Lote',
-    date: '01 de Junho até 30 de Junho',
-    link: 'https://www.sympla.com.br/devparana-conference-2018__281357',
-    soldout: false
-  },
-  {
-    id: 4,
-    value: 80,
-    title: '3° Lote',
-    date: '01 de Julho até 26 de Julho',
-    link: 'https://www.sympla.com.br/devparana-conference-2018__281357',
-    soldout: false
-  }
-],
-
+  tickets: [
+    {
+      id: 1,
+      value: 40,
+      title: 'Lote Promocional',
+      date: '05 de Maio até acabar',
+      link: 'https://www.sympla.com.br/devparana-conference-2018__281357',
+      soldout: true
+    }, {
+      id: 2,
+      value: 50,
+      title: '1° Lote',
+      date: '05 de Maio até 31 de Maio',
+      link: 'https://www.sympla.com.br/devparana-conference-2018__281357',
+      soldout: false
+    }, {
+      id: 3,
+      value: 65,
+      title: '2° Lote',
+      date: '01 de Junho até 30 de Junho',
+      link: 'https://www.sympla.com.br/devparana-conference-2018__281357',
+      soldout: false
+    },
+    {
+      id: 4,
+      value: 80,
+      title: '3° Lote',
+      date: '01 de Julho até 26 de Julho',
+      link: 'https://www.sympla.com.br/devparana-conference-2018__281357',
+      soldout: false
+    }
+  ],
   sponsors: [{
     id: 1,
     name: 'Devparaná',
@@ -100,18 +98,13 @@ export const state = () => ({
 
   support: [{
     id: 1,
-    name: 'Devparaná',
-    address: 'https://devparana.org',
-    image: 'devparana'
+    name: 'Sicoob',
+    address: 'http://www.sicoob.com.br/',
+    image: 'sicoob'
   }, {
     id: 2,
-    name: 'Devparaná',
-    address: 'https://devparana.org',
-    image: 'devparana'
-  }, {
-    id: 3,
-    name: 'Devparaná',
-    address: 'https://devparana.org',
-    image: 'devparana'
+    name: 'Sebrae',
+    address: 'http://www.sebraepr.com.br/PortalSebrae',
+    image: 'sebrae'
   }]
 })
