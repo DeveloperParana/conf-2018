@@ -81,19 +81,10 @@ export const state = () => ({
   ],
   sponsors: [{
     id: 1,
-    name: 'Devparaná',
-    address: 'https://devparana.org',
-    image: 'devparana'
-  }, {
-    id: 2,
-    name: 'Devparaná',
-    address: 'https://devparana.org',
-    image: 'devparana'
-  }, {
-    id: 3,
-    name: 'Devparaná',
-    address: 'https://devparana.org',
-    image: 'devparana'
+    name: 'DB1',
+    address: 'https://db1.com.br',
+    image: 'db1',
+    type: 'diamond'
   }],
 
   support: [{
