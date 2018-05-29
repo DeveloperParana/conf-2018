@@ -5,9 +5,9 @@
 
     <ul class="support--list list-style-none">
       <li class="support--item" v-for="sponsor in sponsors" :key="sponsor.id">
-        <a :href="sponsor.address">
-            <img class="support--image" :src="require('@/assets/images/sponsors/' + sponsor.image + '.png')" alt="">
-          </a>
+        <a v-bind:href="sponsor.address">
+          <img class="support--image" v-bind:class="sponsor.type" v-bind:src="require(`@/assets/images/sponsors/${sponsor.image}.png`)" v-bind:alt="sponsor.name">
+        </a>
       </li>
     </ul>
     <div class="container align-center margin-top-50">
