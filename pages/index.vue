@@ -4,7 +4,7 @@
     <speakers />
     <!-- <buytickets /> -->
     <!-- <call4papers /> -->
-    <!-- <schedule /> -->
+    <schedule />
     <tickets />
     <location />
     <contact />
@@ -17,7 +17,7 @@
 
 <script>
 import about from "@/pages/home/components/about";
-// import schedule from "@/pages/home/components/schedule";
+import schedule from "@/pages/home/components/schedule";
 // import buytickets from "@/components/buytickets";
 // import call4papers from "@/pages/home/components/call4papers";
 import speakers from "@/pages/home/components/speakers";
@@ -31,7 +31,7 @@ export default {
   components: {
     about,
     // call4papers,
-    // schedule,
+    schedule,
     // buytickets,
     speakers,
     tickets,
