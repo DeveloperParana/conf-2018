@@ -244,5 +244,10 @@ de dados públicas em formatos acessíveis.`
     name: 'Sebrae',
     address: 'http://www.sebraepr.com.br/PortalSebrae',
     image: 'sebrae'
+  }, {
+    id: 3,
+    name: 'PodTag',
+    address: 'https://podtag.com.br/',
+    image: 'podtag'
   }]
 })
