@@ -1,70 +1,69 @@
 export const state = () => ({
   speakers: [{
-    id: 1,
-    name: 'Elder Moraes',
-    image: 'elder',
-    role: 'Oracle, São Paulo/SP - Brasil',
-    description: 'Apaixonado por arquitetura de software, cloud e Java EE, ele compartilha suas experiências através de conteúdo online e eventos internacionais como JavaOne, TDC, Oracle Code e Campus Party.',
-    twitter: 'https://twitter.com/@elderjava',
-    github: 'https://github.com/eldermoraes',
-    linkedin: 'https://br.linkedin.com/in/eldermoraes'
-  }, {
-    id: 2,
-    name: 'Turicas (aka Álvaro Justen)',
-    image: 'turicas',
-    role: 'Curitiba/PR - Brasil',
-    description: 'Turicas (aka Álvaro Justen) é programador, professor, hipnotista e dependente químico de cafés especiais.',
-    twitter: 'https://twitter.com/turicas',
-    github: 'https://github.com/turicas'
-  },
-  // {
-  //   id: 3,
-  //   name: 'Guilherme Souza',
-  //   image: 'guilherme',
-  //   role: 'São Paulo/SP - Brasil',
-  //   description: ''
-  // }
-  {
-    id: 4,
-    name: 'Carlos dos Santos',
-    image: 'carlos',
-    role: 'Cornélio Procópio/PR - Brasil',
-    description: `Sócio fundador da CDS Informática, moderador das traduções do site MSDN e WIKI, Microsoft MVP desde 2008, Ganhou o prêmio Advisory Council Member Top Award 2012, Membro fundador do projeto Code Cracker (www.github.com/code-cracker)`,
-    twitter: 'https://twitter.com/cdssoftware',
-    facebook: 'https://facebook.com/carloscds',
-    github: 'https://github.com/carloscds'
-  },
-  {
-    id: 5,
-    name: 'Heitor Gouvêa',
-    image: 'heitor',
-    role: 'Campinas/SP - Brasil',
-    description: 'Instrutor e Pesquisador de Cibersegurança com mais de 3 anos de experiência na área de segurança ofensiva. Autor da ferramenta de anonimato Nipe, presente em várias distribuições Linux focadas em segurança da informação como por exemplo o BlackArch, LionSec e WeakNet. https: //heitorgouvea.me',
-    facebook: 'https://fb.com/GouveaHeitor',
-    github: 'https://github.com/GouveaHeitor'
-  },
-  {
-    id: 6,
-    name: 'Paulo Rogério da Silva Antiquera',
-    image: 'paulo',
-    role: 'Florianópolis/SC / Brasil',
-    description: 'Tenho desenvolvido software por quase toda minha vida, profissionalmente a uns 20 anos. Na última década venho procurando formas mais eficazes de gerar valor aos clientes. Nesta jornada já misturei práticas de diversas fontes: Xp, Kanban, Scrum, PMI. Sou apaixonado por software já fiz de tudo um pouco: iniciando pela programação, devops, facilitação de times, gestão de projetos, produtos, contas... Já conversei bastante, sobre excelência técnica, testes automatizados, ciclos de feedback curtos, débitos técnicos, autonomia, entrega contínua, fluxo, melhoria contínua. E o melhor, tudo isto continua fazendo parte da minha vida, mas não ao mesmo tempo.Agora gosto de fazer uma coisa por vez, a coisa certa e somente a coisa certa!',
-    twitter: 'https://twitter.com/@pauloantiquera',
-    github: 'https://github.com/pauloantiquera'
-  },
-  {
-    id: 7,
-    name: 'Daniel Leite',
-    image: 'daniel',
-    role: 'Florianópolis/SC / Brasil',
-    description: 'Desenvolvedor Front-End formado em Engenharia de Computação pela Univali, atua na área desde 2006. Fã da cultura open-source e colaborador da Cheesecake Labs desde 2016',
-    twitter: 'https://twitter.com/dleitee',
-    github: 'https://github.com/dleitee',
-    linkedin: 'https://www.linkedin.com/in/dleitee/'
-  }
-  ],
-  schedules: [
+      id: 1,
+      name: 'Elder Moraes',
+      image: 'elder',
+      role: 'Oracle, São Paulo/SP - Brasil',
+      description: 'Apaixonado por arquitetura de software, cloud e Java EE, ele compartilha suas experiências através de conteúdo online e eventos internacionais como JavaOne, TDC, Oracle Code e Campus Party.',
+      twitter: 'https://twitter.com/@elderjava',
+      github: 'https://github.com/eldermoraes',
+      linkedin: 'https://br.linkedin.com/in/eldermoraes'
+    }, {
+      id: 2,
+      name: 'Turicas (aka Álvaro Justen)',
+      image: 'turicas',
+      role: 'Curitiba/PR - Brasil',
+      description: 'Turicas (aka Álvaro Justen) é programador, professor, hipnotista e dependente químico de cafés especiais.',
+      twitter: 'https://twitter.com/turicas',
+      github: 'https://github.com/turicas'
+    },
+    // {
+    //   id: 3,
+    //   name: 'Guilherme Souza',
+    //   image: 'guilherme',
+    //   role: 'São Paulo/SP - Brasil',
+    //   description: ''
+    // }
     {
+      id: 4,
+      name: 'Carlos dos Santos',
+      image: 'carlos',
+      role: 'Cornélio Procópio/PR - Brasil',
+      description: `Sócio fundador da CDS Informática, moderador das traduções do site MSDN e WIKI, Microsoft MVP desde 2008, Ganhou o prêmio Advisory Council Member Top Award 2012, Membro fundador do projeto Code Cracker (www.github.com/code-cracker)`,
+      twitter: 'https://twitter.com/cdssoftware',
+      facebook: 'https://facebook.com/carloscds',
+      github: 'https://github.com/carloscds'
+    },
+    {
+      id: 5,
+      name: 'Heitor Gouvêa',
+      image: 'heitor',
+      role: 'Campinas/SP - Brasil',
+      description: 'Instrutor e Pesquisador de Cibersegurança com mais de 3 anos de experiência na área de segurança ofensiva. Autor da ferramenta de anonimato Nipe, presente em várias distribuições Linux focadas em segurança da informação como por exemplo o BlackArch, LionSec e WeakNet. https: //heitorgouvea.me',
+      facebook: 'https://fb.com/GouveaHeitor',
+      github: 'https://github.com/GouveaHeitor'
+    },
+    {
+      id: 6,
+      name: 'Paulo Rogério da Silva Antiquera',
+      image: 'paulo',
+      role: 'Florianópolis/SC / Brasil',
+      description: 'Tenho desenvolvido software por quase toda minha vida, profissionalmente a uns 20 anos. Na última década venho procurando formas mais eficazes de gerar valor aos clientes. Nesta jornada já misturei práticas de diversas fontes: Xp, Kanban, Scrum, PMI. Sou apaixonado por software já fiz de tudo um pouco: iniciando pela programação, devops, facilitação de times, gestão de projetos, produtos, contas... Já conversei bastante, sobre excelência técnica, testes automatizados, ciclos de feedback curtos, débitos técnicos, autonomia, entrega contínua, fluxo, melhoria contínua. E o melhor, tudo isto continua fazendo parte da minha vida, mas não ao mesmo tempo.Agora gosto de fazer uma coisa por vez, a coisa certa e somente a coisa certa!',
+      twitter: 'https://twitter.com/@pauloantiquera',
+      github: 'https://github.com/pauloantiquera'
+    },
+    {
+      id: 7,
+      name: 'Daniel Leite',
+      image: 'daniel',
+      role: 'Florianópolis/SC / Brasil',
+      description: 'Desenvolvedor Front-End formado em Engenharia de Computação pela Univali, atua na área desde 2006. Fã da cultura open-source e colaborador da Cheesecake Labs desde 2016',
+      twitter: 'https://twitter.com/dleitee',
+      github: 'https://github.com/dleitee',
+      linkedin: 'https://www.linkedin.com/in/dleitee/'
+    }
+  ],
+  schedules: [{
       id: 1,
       time: '8:00',
       title: 'COFFEE',
@@ -192,8 +191,7 @@ de dados públicas em formatos acessíveis.`
       description: 'Encerramento / Sorteios / Foto oficial'
     }
   ],
-  tickets: [
-    {
+  tickets: [{
       id: 1,
       value: 40,
       title: 'Lote Promocional',
@@ -225,15 +223,24 @@ de dados públicas em formatos acessíveis.`
     }
   ],
   sponsors: [{
-    id: 1,
-    name: 'DB1',
-    address: 'https://db1.com.br',
-    image: 'db1',
-    type: {
-      diamond: true
+      id: 1,
+      name: 'DB1',
+      address: 'https://db1.com.br',
+      image: 'db1',
+      type: {
+        diamond: true
+      }
+    },
+    {
+      id: 2,
+      name: 'Mandic Cloud Solutions',
+      address: 'https://www.mandic.com.br/',
+      image: 'mandic',
+      type: {
+        diamond: true
+      }
     }
-  }],
-
+  ],
   support: [{
     id: 1,
     name: 'Sicoob',
