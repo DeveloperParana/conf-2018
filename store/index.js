@@ -22,7 +22,7 @@ export const state = () => ({
     //   name: 'Guilherme Souza',
     //   image: 'guilherme',
     //   role: 'São Paulo/SP - Brasil',
-    //   description: ''
+    //   description: 'CTO na Revmob e tem 10 anos de experiência com EcmaScript'
     // }
     {
       id: 4,
@@ -124,10 +124,10 @@ export const state = () => ({
     }, {
       id: 7,
       time: '13:30',
-      title: 'A DEFINIR',
-      name: '',
-      tag: [],
-      description: ''
+      title: 'Bots além do hype: Como bots estão revolucionando a interação homem X maquina',
+      name: 'Guilherme Souza',
+      tag: ['chatbos', 'bots'],
+      description: 'A interface gráfica permitiu que indústria de software atingisse a grande massa de consumidores, dando abertura a novas possibilidades de negócios e tornando a compra de software antes feita somente por empresas, algo tão simples quanto a AppStore, criou áreas, mercados e profissões, UX, Ui Designer, Front-End Developers, moldou comportamentos de compra, fez com que você escolhesse seu novo smartphone pelo tamanho da tela. Este, é o poder de uma nova interface com o usuário. Chatbots, não são brinquedos.'
     }, {
       id: 8,
       time: '14:20',
