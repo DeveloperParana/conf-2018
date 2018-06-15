@@ -47,7 +47,7 @@ export const state = () => ({
       id: 6,
       name: 'Paulo Rogério da Silva Antiquera',
       image: 'paulo',
-      role: 'Florianópolis/SC / Brasil',
+      role: 'Florianópolis/SC - Brasil',
       description: 'Tenho desenvolvido software por quase toda minha vida, profissionalmente a uns 20 anos. Na última década venho procurando formas mais eficazes de gerar valor aos clientes. Nesta jornada já misturei práticas de diversas fontes: Xp, Kanban, Scrum, PMI. Sou apaixonado por software já fiz de tudo um pouco: iniciando pela programação, devops, facilitação de times, gestão de projetos, produtos, contas... Já conversei bastante, sobre excelência técnica, testes automatizados, ciclos de feedback curtos, débitos técnicos, autonomia, entrega contínua, fluxo, melhoria contínua. E o melhor, tudo isto continua fazendo parte da minha vida, mas não ao mesmo tempo.Agora gosto de fazer uma coisa por vez, a coisa certa e somente a coisa certa!',
       twitter: 'https://twitter.com/@pauloantiquera',
       github: 'https://github.com/pauloantiquera'
@@ -56,11 +56,18 @@ export const state = () => ({
       id: 7,
       name: 'Daniel Leite',
       image: 'daniel',
-      role: 'Florianópolis/SC / Brasil',
+      role: 'Florianópolis/SC - Brasil',
       description: 'Desenvolvedor Front-End formado em Engenharia de Computação pela Univali, atua na área desde 2006. Fã da cultura open-source e colaborador da Cheesecake Labs desde 2016',
       twitter: 'https://twitter.com/dleitee',
       github: 'https://github.com/dleitee',
       linkedin: 'https://www.linkedin.com/in/dleitee/'
+    },
+    {
+      id: 8,
+      name: 'Pedro Gomes Tavares',
+      role: 'São Paulo/SP - Brasil',
+      description: 'Engenheiro de software remoto para Locaweb na equipe de um dos principais projetos da Locaweb.',
+      image: 'pedro'
     }
   ],
   schedules: [{
@@ -178,10 +185,10 @@ de dados públicas em formatos acessíveis.`
     }, {
       id: 12,
       time: '17:20',
-      title: 'A DEFINIR',
-      name: '',
-      tag: [],
-      description: ''
+      title: 'Remote work - The good, the bad and the ugly',
+      name: 'Pedro Gomes Tavares',
+      tag: ['remote', 'trabalho remoto'],
+      description: 'Apesar de ter muitos benefícios, trabalho remoto não é um mar de rosas. Existem diversas complexidades adicionais enfrentadas por uma equipe que trabalha remotamente, principalmente em projetos complexos. Inicar trabalho remoto em uma equipe que trabalhava localmente pode ser um desafio ainda maior. Nessa talk vou falar sobre como lidar com esses problemas, e demonstrar como temos resolvido as complexidades que envolvem o trabalho remoto na engenharia de produtos da Locaweb.'
     }, {
       id: 12,
       time: '18:20',
@@ -236,6 +243,15 @@ de dados públicas em formatos acessíveis.`
       name: 'Mandic Cloud Solutions',
       address: 'https://www.mandic.com.br/',
       image: 'mandic',
+      type: {
+        diamond: true
+      }
+    },
+    {
+      id: 3,
+      name: 'Elotech',
+      address: 'https://www.elotech.com.br/',
+      image: 'elotech',
       type: {
         diamond: true
       }
