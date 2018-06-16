@@ -16,15 +16,13 @@ export const state = () => ({
       description: 'Turicas (aka Álvaro Justen) é programador, professor, hipnotista e dependente químico de cafés especiais.',
       twitter: 'https://twitter.com/turicas',
       github: 'https://github.com/turicas'
-    },
-    // {
-    //   id: 3,
-    //   name: 'Guilherme Souza',
-    //   image: 'guilherme',
-    //   role: 'São Paulo/SP - Brasil',
-    //   description: 'CTO na Revmob e tem 10 anos de experiência com EcmaScript'
-    // }
-    {
+    },{
+      id: 3,
+      name: 'Guilherme Souza',
+      image: 'guilherme',
+      role: 'São Paulo/SP - Brasil',
+      description: 'CTO na Revmob e tem 10 anos de experiência com EcmaScript'
+    },{
       id: 4,
       name: 'Carlos dos Santos',
       image: 'carlos',
@@ -234,27 +232,35 @@ de dados públicas em formatos acessíveis.`
       name: 'DB1',
       address: 'https://db1.com.br',
       image: 'db1',
-      type: {
-        diamond: true
-      }
+      type: 'diamond'
     },
     {
       id: 2,
       name: 'Mandic Cloud Solutions',
       address: 'https://www.mandic.com.br/',
       image: 'mandic',
-      type: {
-        diamond: true
-      }
+      type: 'diamond'
     },
     {
       id: 3,
       name: 'Elotech',
       address: 'https://www.elotech.com.br/',
       image: 'elotech',
-      type: {
-        diamond: true
-      }
+      type: 'diamond'
+    },
+    {
+      id: 4,
+      name: 'Locaweb',
+      address: 'https://locaweb.com.br',
+      image: 'locaweb',
+      type: 'silver'
+    },
+    {
+      id: 5,
+      name: 'oracle',
+      address: 'https://cloud.oracle.com/home',
+      image: 'oracle',
+      type: 'silver'
     }
   ],
   support: [{

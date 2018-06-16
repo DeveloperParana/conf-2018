@@ -2,11 +2,19 @@
 <div class="support--block justify-content-center container column" id="sponsors">
   <div class="size margin">
     <h2 class="support--title flex-grow-1">Patrocinadores</h2>
-
+    <h3 class="support--type flex-grow-1">Diamond</h3>
     <ul class="support--list list-style-none">
-      <li class="support--item" v-for="sponsor in sponsors" :key="sponsor.id">
+      <li class="support--item" v-for="sponsor in getSponsorByType('diamond')" :key="sponsor.id">
         <a v-bind:href="sponsor.address">
-          <img class="support--image" v-bind:class="sponsor.type" v-bind:src="require(`@/assets/images/sponsors/${sponsor.image}.png`)" v-bind:alt="sponsor.name">
+          <img class="support--image diamond" v-bind:src="require(`@/assets/images/sponsors/${sponsor.image}.png`)" v-bind:alt="sponsor.name">
+        </a>
+      </li>
+    </ul>
+    <h3 class="support--type flex-grow-1">Silver</h3>
+    <ul class="support--list list-style-none">
+      <li class="support--item" v-for="sponsor in getSponsorByType('silver')" :key="sponsor.id">
+        <a v-bind:href="sponsor.address">
+          <img class="support--image silver" v-bind:src="require(`@/assets/images/sponsors/${sponsor.image}.png`)" v-bind:alt="sponsor.name">
         </a>
       </li>
     </ul>
@@ -25,6 +33,11 @@ import { mapState } from 'vuex'
 export default {
   computed: {
     ...mapState(['sponsors'])
+  },
+  methods: {
+    getSponsorByType(type) {
+      return this.$store.state.sponsors.filter(s => { return s.type === type})
+    }
   }
 }
 </script>
