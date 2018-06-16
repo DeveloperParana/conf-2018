@@ -16,15 +16,13 @@ export const state = () => ({
       description: 'Turicas (aka Álvaro Justen) é programador, professor, hipnotista e dependente químico de cafés especiais.',
       twitter: 'https://twitter.com/turicas',
       github: 'https://github.com/turicas'
-    },
-    // {
-    //   id: 3,
-    //   name: 'Guilherme Souza',
-    //   image: 'guilherme',
-    //   role: 'São Paulo/SP - Brasil',
-    //   description: ''
-    // }
-    {
+    },{
+      id: 3,
+      name: 'Guilherme Souza',
+      image: 'guilherme',
+      role: 'São Paulo/SP - Brasil',
+      description: 'CTO na Revmob e tem 10 anos de experiência com EcmaScript'
+    },{
       id: 4,
       name: 'Carlos dos Santos',
       image: 'carlos',
@@ -124,10 +122,10 @@ export const state = () => ({
     }, {
       id: 7,
       time: '13:30',
-      title: 'A DEFINIR',
-      name: '',
-      tag: [],
-      description: ''
+      title: 'Bots além do hype: Como bots estão revolucionando a interação homem X maquina',
+      name: 'Guilherme Souza',
+      tag: ['chatbos', 'bots'],
+      description: 'A interface gráfica permitiu que indústria de software atingisse a grande massa de consumidores, dando abertura a novas possibilidades de negócios e tornando a compra de software antes feita somente por empresas, algo tão simples quanto a AppStore, criou áreas, mercados e profissões, UX, Ui Designer, Front-End Developers, moldou comportamentos de compra, fez com que você escolhesse seu novo smartphone pelo tamanho da tela. Este, é o poder de uma nova interface com o usuário. Chatbots, não são brinquedos.'
     }, {
       id: 8,
       time: '14:20',
@@ -234,27 +232,35 @@ de dados públicas em formatos acessíveis.`
       name: 'DB1',
       address: 'https://db1.com.br',
       image: 'db1',
-      type: {
-        diamond: true
-      }
+      type: 'diamond'
     },
     {
       id: 2,
       name: 'Mandic Cloud Solutions',
       address: 'https://www.mandic.com.br/',
       image: 'mandic',
-      type: {
-        diamond: true
-      }
+      type: 'diamond'
     },
     {
       id: 3,
       name: 'Elotech',
       address: 'https://www.elotech.com.br/',
       image: 'elotech',
-      type: {
-        diamond: true
-      }
+      type: 'diamond'
+    },
+    {
+      id: 4,
+      name: 'Locaweb',
+      address: 'https://locaweb.com.br',
+      image: 'locaweb',
+      type: 'silver'
+    },
+    {
+      id: 5,
+      name: 'oracle',
+      address: 'https://cloud.oracle.com/home',
+      image: 'oracle',
+      type: 'silver'
     }
   ],
   support: [{
