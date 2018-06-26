@@ -261,6 +261,13 @@ de dados públicas em formatos acessíveis.`
       address: 'https://cloud.oracle.com/home',
       image: 'oracle',
       type: 'silver'
+    },
+    {
+      id: 6,
+      name: 'Conta Azul',
+      address: 'https://contaazul.com/',
+      image: 'contaazul',
+      type: 'silver'
     }
   ],
   support: [{
@@ -278,5 +285,10 @@ de dados públicas em formatos acessíveis.`
     name: 'PodTag',
     address: 'https://podtag.com.br/',
     image: 'podtag'
+  }, {
+    id: 4,
+    name: 'Sociedade Rural de Maringá',
+    address: 'http://www.srm.org.br/',
+    image: 'srm'
   }]
 })
