@@ -132,8 +132,7 @@ export const state = () => ({
       title: '3 Pilares de uma Cultura de Engenharia Eficaz',
       name: 'Paulo Rogério da Silva Antiquera',
       tag: ['Engenharia de Software', 'Cultura, Boas Práticas', 'Eficácia', 'XP', 'Agilidade'],
-
-      description: `"Cultura, dentro das organizações, é algo até meio místico. Mas é a cultura que faz com que as pessoas tomem decisões eficazes, sem nenhuma necessidade de migro-gerenciamento. Quando falamos de cultura de engenharia, neste caso engenharia de software, estamos nos referindo ao conjunto de valores técnicos que definem a identidade do time de desenvolvimento de uma companhia.
+      description: `"Cultura, dentro das organizações, é algo até meio místico. Mas é a cultura que faz com que as pessoas tomem decisões eficazes, sem nenhuma necessidade de micro-gerenciamento. Quando falamos de cultura de engenharia, neste caso engenharia de software, estamos nos referindo ao conjunto de valores técnicos que definem a identidade do time de desenvolvimento de uma companhia.
 
 Se esta identidade é adaptada a dinâmica do negócio, consegue ser facilmente escalada, e for intrinsicamente ligada a excelência técnica, esta cultura entrega para a companhia: tempo adequado de resposta, confiança nas soluções, satisfação interna e externa além do tão buscado resultado econômico.  De maneira contrária, quando a cultura de engenharia não consegue se conectar às necessidades do negócio, traz problemas de rentabilidade, insatisfação de clientes e colaboradores entre outros problemas graves.
 
@@ -148,7 +147,6 @@ Nesta apresentação vamos discutir três elementos essenciais para construção
 * Liderança
 
 Nosso foco será o conjunto de práticas e princípios que podemos seguir no nosso dia-a-dia para que a cultura cresça e atenda as expectativas do negócio, orgulhe os engenheiros e, seja transmitida e respeitada por todas as áreas da companhia."`
-
     }, {
       id: 9,
       time: '15:10',
