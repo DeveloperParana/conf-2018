@@ -214,7 +214,7 @@ de dados públicas em formatos acessíveis.`
       title: '2° Lote',
       date: '01 de Junho até 30 de Junho',
       link: 'https://www.sympla.com.br/devparana-conference-2018__281357',
-      soldout: false
+      soldout: true
     },
     {
       id: 4,
