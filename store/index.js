@@ -266,6 +266,13 @@ de dados públicas em formatos acessíveis.`
       address: 'https://contaazul.com/',
       image: 'contaazul',
       type: 'silver'
+    },
+    {
+      id: 7,
+      name: 'Tecnospeed',
+      address: 'https://tecnospeed.com.br/',
+      image: 'tecnospeed',
+      type: 'diamond'
     }
   ],
   support: [{
@@ -288,5 +295,10 @@ de dados públicas em formatos acessíveis.`
     name: 'Sociedade Rural de Maringá',
     address: 'http://www.srm.org.br/',
     image: 'srm'
+  },{
+    id: 5,
+    name: 'Software by Maringá',
+    address: 'http://www.softwarebymaringa.com.br/',
+    image: 'sbm'
   }]
 })
