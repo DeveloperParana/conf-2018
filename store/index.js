@@ -295,5 +295,10 @@ de dados públicas em formatos acessíveis.`
     name: 'Sociedade Rural de Maringá',
     address: 'http://www.srm.org.br/',
     image: 'srm'
+  },{
+    id: 5,
+    name: 'Software by Maringá',
+    address: 'http://www.softwarebymaringa.com.br/',
+    image: 'sbm'
   }]
 })
