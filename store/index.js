@@ -266,6 +266,13 @@ de dados públicas em formatos acessíveis.`
       address: 'https://contaazul.com/',
       image: 'contaazul',
       type: 'silver'
+    },
+    {
+      id: 7,
+      name: 'Tecnospeed',
+      address: 'https://tecnospeed.com.br/',
+      image: 'tecnospeed',
+      type: 'diamond'
     }
   ],
   support: [{
