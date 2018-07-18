@@ -268,6 +268,13 @@ de dados públicas em formatos acessíveis.`
       address: 'https://contaazul.com/',
       image: 'contaazul',
       type: 'silver'
+    },
+    {
+      id: 7,
+      name: 'Toptal',
+      address: 'https://toptal.com',
+      image: 'toptal',
+      type: 'silver'
     }
   ],
   support: [{
@@ -290,5 +297,10 @@ de dados públicas em formatos acessíveis.`
     name: 'Sociedade Rural de Maringá',
     address: 'http://www.srm.org.br/',
     image: 'srm'
+  }, {
+    id: 5,
+    name: 'Umbler',
+    address: 'https://umbler.com.br/',
+    image: 'umbler'
   }]
 })
