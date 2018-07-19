@@ -280,12 +280,6 @@ de dados públicas em formatos acessíveis.`
       address: 'https://toptal.com',
       image: 'toptal',
       type: 'silver'
-    }, {
-      id: 6,
-      name: 'Umbler',
-      address: 'https://umbler.com.br/',
-      image: 'umbler',
-      type: 'silver'
     }
   ],
   support: [{
@@ -313,5 +307,10 @@ de dados públicas em formatos acessíveis.`
       name: 'Software by Maringá',
       address: 'http://www.softwarebymaringa.com.br/',
       image: 'sbm'
+    }, {
+      id: 6,
+      name: 'Umbler',
+      address: 'https://umbler.com.br/',
+      image: 'umbler'
     }]
 })
