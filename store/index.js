@@ -310,7 +310,7 @@ de dados públicas em formatos acessíveis.`
     }, {
       id: 6,
       name: 'Umbler',
-      address: 'https://umbler.com.br/',
+      address: 'https://www.umbler.com/br',
       image: 'umbler'
     }]
 })
