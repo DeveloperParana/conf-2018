@@ -42,41 +42,13 @@
     <div class="shop--info flex-basis-500 flex-grow-1">
       <div class="">
         <h3>
-            <span>CAMISETA</span>
-            <span>DEVPARANÁ</span>
-            <span>2018</span>
-          </h3>
-        <p>As camisetas do evento serão vendidas somente <b>ANTECIPADAMENTE</b> e estarão disponíveis para retirada no credenciamento do evento.</p>
-        <div class="container wrap ">
-          <div class="container wrap align-items-end">
-            <ul class="container shop-check">
-              <li>
-                <input type="radio" id="s" name="size" checked="checked" value="E2CA19CAB0B0E5DAA4C0FF9139FBD73C" v-model="tshirtSize">
-                <label for="s">S</label>
-              </li>
-              <li>
-                <input type="radio" id="m" name="size" value="316828DC22229F6DD4DAFFADCB940D26" v-model="tshirtSize">
-                <label for="m">M</label>
-              </li>
-              <li>
-                <input type="radio" id="l" name="size" value="6C0760762727348CC4D39F8A7A077AB6" v-model="tshirtSize">
-                <label for="l">L</label>
-              </li>
-              <li>
-                <input type="radio" id="xl" name="size" value="9B680C0DDCDC17FAA49B8F9CF9D20CAD" v-model="tshirtSize">
-                <label for="xl">XL</label>
-              </li>
-              <li>
-                <input type="radio" id="xxl" name="size" value="BCCAC3D587876EFFF459AF912FC8390F" v-model="tshirtSize">
-                <label for="xxl">XXL</label>
-              </li>
-            </ul>
-          </div>
-          <div class="shop--info--value container column container align-center">
-            <span>R$45</span>
-            <button type="button" name="button" class="btn btn-full btn-primary" @click="tshirtSelectionValidation()">Comprar camisa</button>
-          </div>
-        </div>
+          <span>CAMISETA</span>
+          <span>DEVPARANÁ</span>
+          <span>2018</span>
+        </h3>
+        <p>As vendas antecipadas foi <b>encerrada</b>.</p>
+        <p>Se você já comprou sua camiseta, retire ela na recepção do evento junto ao credenciamento.</p>
+        <p>Caso você não tenha comprado teremos venda no dia, a quantidade e tamanho podem ser limitadas.</p>
       </div>
     </div>
   </div>
