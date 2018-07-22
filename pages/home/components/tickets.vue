@@ -48,7 +48,7 @@
         </h3>
         <p>As vendas antecipadas foi <b>encerrada</b>.</p>
         <p>Se você já comprou sua camiseta, retire ela na recepção do evento junto ao credenciamento.</p>
-        <p>Caso você não tenha comprado teremos venda no dia, a quantidade e tamanho pode ser limitadas.</p>
+        <p>Caso você não tenha comprado teremos venda no dia, a quantidade e tamanho podem ser limitadas.</p>
       </div>
     </div>
   </div>
