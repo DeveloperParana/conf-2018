@@ -222,7 +222,7 @@ de dados públicas em formatos acessíveis.`
       title: '3° Lote',
       date: '01 de Julho até 26 de Julho',
       link: 'https://www.sympla.com.br/devparana-conference-2018__281357',
-      soldout: false
+      soldout: true
     }
   ],
   sponsors: [{

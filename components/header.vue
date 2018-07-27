@@ -60,7 +60,7 @@ import menuFixed from "@/components/menu";
 export default {
   data: function() {
     let now = new Date();
-    let eventDate = new Date(2018, 6, 28);
+    let eventDate = new Date(2018, 6, 28, 8);
 
     return {
       time: eventDate - now
